@@ -1,0 +1,119 @@
+.design-main-container {
+    padding: 3rem;
+}
+
+.main-content-container {
+    padding: 2rem 4rem;
+}
+
+.design-content-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.head-title-1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.head-title-2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.gallery-headers-button-container {
+    display: flex;
+    width: 80%;
+    gap: 2rem;
+}
+
+.gallery-headers-button-container .btn {
+    background: #BEBAB1;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.gallery-headers-button-container .btn:hover {
+    background: #F1CD76;
+    color: black;
+}
+
+.gallery-headers-button-container .btn:focus {
+    background: #F1CD76;
+    color: black;
+    border: none;
+    box-shadow: none;
+}
+
+.gallery-headers-button-container .active-now {
+    background-color: #F1CD76;
+    color: black;
+}
+
+.carousel {
+    width: 100%;
+    height: 40vh;
+    margin-top: 3rem;
+}
+
+.carousel .carousel-control-prev {
+    width: 4rem;
+}
+
+.carousel .carousel-control-next {
+    width: 4rem;
+}
+
+.carousel-inner {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel .carousel-inner .carousel-item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: white;
+}
+
+.image-div-container {
+    height: 100%;
+}
+
+.image-div-container > img {
+    height: 100%;
+}
+
+/* .carousel-inner .carousel-item {
+    display: flex;
+    height: 40vh;
+}
+
+.image-div-container {
+    width: 30%;
+}
+
+.carousel-inner .carousel-item .image-div-container > img {
+    height: 100%;
+    width: 100%;
+} */
