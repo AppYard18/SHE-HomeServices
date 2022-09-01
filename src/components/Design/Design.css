@@ -1,9 +1,6 @@
 .design-main-container {
-    padding: 3rem;
-}
-
-.main-content-container {
-    padding: 2rem 4rem;
+    height: 100vh;
+    padding-bottom: 5%;
 }
 
 .design-content-head {
@@ -11,6 +8,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 
 .head-title-1 {
@@ -35,6 +34,7 @@
     display: flex;
     width: 80%;
     gap: 2rem;
+    margin-left: 5%;
 }
 
 .gallery-headers-button-container .btn {
@@ -68,8 +68,13 @@
 
 .carousel {
     width: 100%;
-    height: 40vh;
-    margin-top: 3rem;
+    height: 50vh;
+    margin-top: 1.5rem;
+    display: none;
+}
+
+.display {
+    display: block;
 }
 
 .carousel .carousel-control-prev {
@@ -94,26 +99,22 @@
     align-items: center;
     gap: 1.5rem;
     background-color: white;
+    padding: 2rem 0;
 }
 
 .image-div-container {
     height: 100%;
+    transition: all 0.3s ease-in-out;
 }
+
+.image-div-container:hover {
+    transform: scale(1.2);
+}
+
+/* .design-main-container .image-div-container:not(:hover) {
+    filter: blur(200px);
+} */
 
 .image-div-container > img {
     height: 100%;
 }
-
-/* .carousel-inner .carousel-item {
-    display: flex;
-    height: 40vh;
-}
-
-.image-div-container {
-    width: 30%;
-}
-
-.carousel-inner .carousel-item .image-div-container > img {
-    height: 100%;
-    width: 100%;
-} */

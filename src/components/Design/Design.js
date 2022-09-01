@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Design.css';
 import '@coreui/coreui/dist/css/coreui.min.css';
-import Header from '../Header';
 import Button from 'react-bootstrap/Button';
 import { CCarousel, CCarouselItem } from '@coreui/react';
 
@@ -9,20 +8,58 @@ function Design() {
 
     const buttonSelect = () => {
         let buttons = document.querySelectorAll(".btn");
-        buttons[0].classList.remove("active-now");
-        buttons[1].classList.remove("active-now");
-        buttons[2].classList.remove("active-now");
-        buttons[3].classList.remove("active-now");
-        for(let i = 0; i<buttons.length; i++) {
+        let carousels = document.querySelectorAll(".carousel");
+        
+        for(let i = 1; i<buttons.length; i++) {
             buttons[i].addEventListener('click', () => {
-                buttons[i].classList.add("active-now");
+                console.log(i);
+                if (i === 1) {
+                    buttons[1].classList.add("active-now");
+                    buttons[2].classList.remove("active-now");
+                    buttons[3].classList.remove("active-now");
+                    buttons[4].classList.remove("active-now");
+                    carousels[0].classList.add("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.remove("display");
+                } else if (i === 2) {
+                    buttons[1].classList.remove("active-now");
+                    buttons[2].classList.add("active-now");
+                    buttons[3].classList.remove("active-now");
+                    buttons[4].classList.remove("active-now");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.add("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.remove("display");
+                } else if (i === 3) {
+                    buttons[1].classList.remove("active-now");
+                    buttons[2].classList.remove("active-now");
+                    buttons[3].classList.add("active-now");
+                    buttons[4].classList.remove("active-now");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.add("display");
+                    carousels[3].classList.remove("display");
+                } else if (i === 4) {
+                    buttons[1].classList.remove("active-now");
+                    buttons[2].classList.remove("active-now");
+                    buttons[3].classList.remove("active-now");
+                    buttons[4].classList.add("active-now");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.add("display");
+                }
             })
         }
     }
 
+    useEffect(() => {
+        buttonSelect();
+    })
+
     return (
         <div className='design-main-container'>
-            <Header />
             <div className='main-content-container'>
                 <div className='design-content-head'>
                     <div className='head-title-1'>
@@ -38,16 +75,16 @@ function Design() {
                     <Button onClick={buttonSelect}>Kitchen</Button>
                     <Button onClick={buttonSelect}>Other</Button>
                 </div>
-                <CCarousel controls transition="crossfade" dark interval={false}>
+                <CCarousel controls transition="crossfade" dark interval={false} className="display">
                     <CCarouselItem>
                         <div className='image-div-container'>
                             <img src={require("../../images/design1.png")} alt="image1" />    
                         </div>
                         <div className='image-div-container'>
-                            <img src={require("../../images/design2.png")} alt="image1" />    
+                            <img src={require("../../images/design1.png")} alt="image1" />    
                         </div>
                         <div className='image-div-container'>
-                            <img src={require("../../images/design3.png")} alt="image1" />    
+                            <img src={require("../../images/design1.png")} alt="image1" />    
                         </div>
                         <div className='image-div-container'>
                             <img src={require("../../images/design1.png")} alt="image1" />    
@@ -58,10 +95,91 @@ function Design() {
                             <img src={require("../../images/design1.png")} alt="image1" />    
                         </div>
                         <div className='image-div-container'>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false}>
+                    <CCarouselItem>
+                        <div className='image-div-container'>
                             <img src={require("../../images/design2.png")} alt="image1" />    
                         </div>
                         <div className='image-div-container'>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false}>
+                    <CCarouselItem>
+                        <div className='image-div-container'>
                             <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false}>
+                    <CCarouselItem>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container'>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
                         </div>
                     </CCarouselItem>
                 </CCarousel>
