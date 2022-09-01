@@ -80,3 +80,9 @@
     color: #000000;
     width: 90%;
 }
+
+@media (max-width:920px) {
+    .hero-box-text {
+        display: none;    
+    }
+}

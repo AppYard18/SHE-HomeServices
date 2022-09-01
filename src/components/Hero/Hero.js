@@ -9,7 +9,7 @@ import Button from 'react-bootstrap/Button';
 
 function Hero() {
   return (
-    <Container>
+    <Container id="home" className='hero-container'>
       <Row>
         <Col sm>
           <div className='hero-box'>

@@ -2,6 +2,7 @@ import './App.css';
 import Home from  './components/Home/Home';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Header from './components/Header';
+import Gallery from './components/gallery/gallery';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />}/>
-          {/* <Route path='/customer/:customerId' element={<Customer />}/> */}
+          <Route path='/gallery' element={<Gallery />}/>
         </Routes>
       </div>
     </BrowserRouter>
