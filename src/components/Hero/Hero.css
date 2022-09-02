@@ -178,7 +178,7 @@
     }
 
     .hero-box-title {
-        justify-content: flex-start;
+        text-align: left;
         padding-top: 15%;
     }
     
