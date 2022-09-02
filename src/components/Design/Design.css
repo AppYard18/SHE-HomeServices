@@ -118,7 +118,7 @@
 
 .carousel-contain {
     height: 100%;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
