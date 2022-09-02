@@ -8,3 +8,17 @@
     height: 100%;
     width: 100%;
 }
+
+.content-hover-background {
+    height: 100vh;
+    width: 100%;
+    background: rgba(176, 176, 176, 0.63);
+    /* filter: blur(10px); */
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+
+.display-background {
+    display: block;
+}

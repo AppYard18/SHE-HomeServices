@@ -106,6 +106,17 @@
 }
 
 .main-content-container .carousel .carousel-inner .carousel-item {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.carousel-contain {
     height: 100%;
     width: 100%;
     display: flex;
@@ -113,8 +124,6 @@
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    background-color: white;
-    padding: 2rem 0;
 }
 
 .image-div-container {
@@ -124,11 +133,11 @@
 
 .image-div-container:hover {
     transform: scale(1.2);
-    backdrop-filter: blur(10px);
+    z-index: 6;
 }
 
-.blur {
-    filter: blur(5px);
+.carousel-contain:hover .image-div-container:not(:hover) {
+    filter: blur(10px);
 }
 
 .image-div-container > img {

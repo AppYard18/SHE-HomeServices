@@ -185,4 +185,17 @@
     .hero-box-title > svg {
         height: 80px;
     }
+
+    .form-head-title {
+        font-size: 35.7259px;
+    }
+
+    .main-form {
+        padding: 0;
+        width: 80%;
+    }
+
+    .main-form > input {
+        font-size: 18px;
+    }
 }
