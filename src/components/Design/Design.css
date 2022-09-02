@@ -4,6 +4,10 @@
     padding: 0 3rem;
 }
 
+.main-content-container {
+    height: 100%;
+}
+
 .design-content-head {
     display: flex;
     flex-direction: column;
@@ -37,6 +41,7 @@
     gap: 2rem;
     margin-left: 5%;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .gallery-headers-button-container .btn {
@@ -100,7 +105,7 @@
     width: 100%;
 }
 
-.carousel .carousel-inner .carousel-item {
+.main-content-container .carousel .carousel-inner .carousel-item {
     height: 100%;
     width: 100%;
     display: flex;
@@ -143,6 +148,27 @@
     .display.home-mobile {
         display: none;
     }
+
+    .design-main-container {
+        padding: 0 0.5rem;
+        margin-top: 10%;
+    }
+
+    .head-title-1 {
+        line-height: 70px;
+    }
+
+    .head-title-2 {
+        line-height: 70px;
+    }
+
+    .gallery-headers-button-container {
+        margin-top: 5%;
+    }
+
+    .main-content-container .carousel .carousel-inner .carousel-item {
+        padding: 4rem 3rem;
+    }
 }
 
 @media (max-width:432px) {
@@ -156,5 +182,37 @@
     
     .display.home-mobile {
         display: block;
+    }
+
+    .design-main-container {
+        padding: 0 0.5rem;
+    }
+
+    .main-content-container {
+        margin-top: 30%;
+    }
+
+    .head-title-1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .head-title-2 {
+        font-size: 25px;
+        line-height: 50px;
+        text-align: left;
+    }
+
+    .main-content-container .carousel .carousel-inner .carousel-item {
+        padding: 2rem 3rem;
+    }
+
+    .gallery-headers-button-container {
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .custom-carousel {
+        margin-top: 0;
     }
 }

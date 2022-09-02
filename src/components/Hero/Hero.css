@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+.hero-container {
+    height: 100vh;
+}
+
 .hero-box {
     display: flex;
     flex-direction: column;
@@ -96,5 +100,86 @@
 
     .row {
         flex-direction: column-reverse;
+    }
+
+    .hero-form {
+        padding-top: 30%;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .main-form-container {
+        height: auto;
+        width: auto;
+        align-items: center;
+    }
+
+    .form-head-title {
+        font-size: 50px;
+    }
+
+    .main-form {
+        padding: 0;
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .main-form > input {
+        font-size: 24px;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+
+    .hero-box {
+        height: auto;
+    }
+
+    .hero-box-title {
+        justify-content: center;
+        padding-top: 15%;
+    }
+    
+    .hero-box-title > svg {
+        height: 130px;
+    }
+}
+
+@media (max-width:432px) {
+    .hero-form {
+        padding-top: 40%;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .main-form-container {
+        height: auto;
+        width: 95%;
+        padding: 1.5rem 0.5rem;
+        align-items: center;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+
+    .hero-box {
+        height: auto;
+    }
+
+    .hero-box-title {
+        justify-content: center;
+        padding-top: 15%;
+    }
+    
+    .hero-box-title > svg {
+        height: 80px;
     }
 }

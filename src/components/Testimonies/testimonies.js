@@ -19,7 +19,7 @@ function Testimonies() {
             </CCarousel>
         </div>
         <div className='testimonies-head-container'>
-            <span className='testimonies-head-title'>HAPPY CUSTOMERS</span>
+            <span className='testimonies-head-title'><span>HAPPY</span> CUSTOMERS</span>
         </div>
     </div>
   )
