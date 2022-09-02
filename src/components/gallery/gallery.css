@@ -123,6 +123,7 @@
 @media (max-width:432px) {
     .gallery-main-container {
         margin-top: 40%;
+        padding: 0 1rem;
     }
 
     .gallery-content-head {
@@ -159,9 +160,5 @@
     .swiper-wrapper {
         gap: 0;
         margin-left: 0;
-    }
-
-    .gallery-main-container {
-        padding: 0 0.5rem;
     }
 }

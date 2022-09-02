@@ -178,7 +178,7 @@
     }
 
     .hero-box-title {
-        justify-content: center;
+        justify-content: flex-start;
         padding-top: 15%;
     }
     
@@ -191,8 +191,8 @@
     }
 
     .main-form {
-        padding: 0;
         width: 80%;
+        margin-top: 0;
     }
 
     .main-form > input {
