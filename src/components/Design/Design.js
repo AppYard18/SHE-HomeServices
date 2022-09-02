@@ -69,7 +69,7 @@ function Design() {
     })
 
     return (
-        <div className='design-main-container'>
+        <div className='design-main-container' id='design'>
             <div className='main-content-container'>
                 <div className='design-content-head'>
                     <div className='head-title-1'>

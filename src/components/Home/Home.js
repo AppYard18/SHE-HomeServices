@@ -3,7 +3,6 @@ import './Home.css';
 import Hero from '../Hero/Hero';
 import Design from '../Design/Design';
 import Testimonies from '../Testimonies/testimonies';
-import ContactUs from '../contactUs/contactUs';
 
 function Home() {
   return (
@@ -11,7 +10,6 @@ function Home() {
         <Hero />
         <Design />
         <Testimonies />
-        <ContactUs />
     </div>
   )
 }
