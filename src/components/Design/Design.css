@@ -36,6 +36,7 @@
     width: 80%;
     gap: 2rem;
     margin-left: 5%;
+    margin-top: 1rem;
 }
 
 .gallery-headers-button-container .btn {
@@ -74,15 +75,15 @@
     display: none;
 }
 
-.display.normal {
+.display.home-normal {
     display: block;
 }
 
-.tablet {
+.display.home-tablet {
     display: none;
 }
 
-.mobile {
+.display.home-mobile {
     display: none;
 }
 
@@ -131,9 +132,29 @@
 }
 
 @media (max-width:964px) {
+    .display.home-normal {
+        display: none;
+    }
     
+    .display.home-tablet {
+        display: block;
+    }
+    
+    .display.home-mobile {
+        display: none;
+    }
 }
 
 @media (max-width:432px) {
+    .display.home-normal {
+        display: none;
+    }
     
+    .display.home-tablet {
+        display: none;
+    }
+    
+    .display.home-mobile {
+        display: block;
+    }
 }

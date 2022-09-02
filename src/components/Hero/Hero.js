@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 
 
 function Hero() {
@@ -31,7 +30,7 @@ function Hero() {
                 <Form.Control type="text" placeholder="Enter Your Name" />
                 <Form.Control type="text" placeholder="Enter Your Email Id" />
                 <Form.Control type="text" placeholder="Enter Your Mobile Number" />
-                <Button>Book a Free Design Session</Button>
+                <button type='button' className='hero-btn'>Book a Free Design Session</button>
               </form>
             </div>
           </div>

@@ -6,6 +6,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 
 function Header() {
+
+  const navbar_close = () => {
+    document.querySelector(".navbar-toggler").classList.add("collapsed");
+    document.querySelector(".navbar-collapse").classList.remove("show");
+  }
+
   return (
     <Navbar expand="lg" sticky='top'>
       <Container>
@@ -19,10 +25,10 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/#design">Home</Nav.Link>
-            <Nav.Link href="/#testimonies">Testimonies</Nav.Link>
-            <Nav.Link href="/contact">Contact Us</Nav.Link>
-            <Nav.Link href="/gallery">Gallery</Nav.Link>
+            <Nav.Link href="/#design" onClick={navbar_close}>Home</Nav.Link>
+            <Nav.Link href="/#testimonies" onClick={navbar_close}>Testimonies</Nav.Link>
+            <Nav.Link href="/contact" onClick={navbar_close}>Contact Us</Nav.Link>
+            <Nav.Link href="/gallery" onClick={navbar_close}>Gallery</Nav.Link>
             <Nav.Link href="/">Get Estimate</Nav.Link>
           </Nav>
         </Navbar.Collapse>
