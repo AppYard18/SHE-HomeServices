@@ -74,8 +74,16 @@
     display: none;
 }
 
-.display {
+.display.normal {
     display: block;
+}
+
+.tablet {
+    display: none;
+}
+
+.mobile {
+    display: none;
 }
 
 .carousel .carousel-control-prev {
@@ -120,4 +128,12 @@
 .image-div-container > img {
     height: 100%;
     width: 100%;
+}
+
+@media (max-width:964px) {
+    
+}
+
+@media (max-width:432px) {
+    
 }

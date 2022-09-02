@@ -90,3 +90,32 @@
 
     color: #B6B6B6;
 }
+
+@media (max-width:964px) {
+    .contactUs-container {
+        background-size: 100% 100%;
+        align-items: flex-start;
+    }
+
+    .contact-form-container {
+        margin-left: 25%;
+        margin-top: 25%;
+    }
+}
+
+@media (max-width:432px) {
+    .contactUs-container {
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .contact-form-container {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .call-div .span-2 {
+        font-size: 25px;
+    }
+}

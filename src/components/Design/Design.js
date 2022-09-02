@@ -64,7 +64,6 @@ function Design() {
     }
 
     useEffect(() => {
-
         buttonSelect();
     })
 
@@ -85,7 +84,7 @@ function Design() {
                     <Button onClick={buttonSelect}>Kitchen</Button>
                     <Button onClick={buttonSelect}>Other</Button>
                 </div>
-                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel display">
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel display normal">
                     <CCarouselItem>
                         <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                             <img src={require("../../images/design1.png")} alt="image1" />    
@@ -112,7 +111,76 @@ function Design() {
                         </div>
                     </CCarouselItem>
                 </CCarousel>
-                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel">
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel display tablet">
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel display mobile">
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel normal">
                     <CCarouselItem>
                         <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                             <img src={require("../../images/design2.png")} alt="image1" />    
@@ -139,7 +207,76 @@ function Design() {
                         </div>
                     </CCarouselItem>
                 </CCarousel>
-                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel">
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel tablet">
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel mobile">
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design2.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel normal">
                     <CCarouselItem>
                         <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                             <img src={require("../../images/design3.png")} alt="image1" />    
@@ -166,7 +303,76 @@ function Design() {
                         </div>
                     </CCarouselItem>
                 </CCarousel>
-                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel">
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel tablet">
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel mobile">
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design3.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel normal">
                     <CCarouselItem>
                         <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                             <img src={require("../../images/design1.png")} alt="image1" />    
@@ -188,6 +394,74 @@ function Design() {
                         <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                             <img src={require("../../images/design1.png")} alt="image1" />    
                         </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel tablet">
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel mobile">
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                            <img src={require("../../images/design1.png")} alt="image1" />    
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
                         <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                             <img src={require("../../images/design1.png")} alt="image1" />    
                         </div>
