@@ -164,6 +164,10 @@
         display: none;    
     }
 
+    .hero-box-text-1 {
+        display: none;
+    }
+
     .hero-form {
         padding-top: 40%;
         margin-left: 0;
