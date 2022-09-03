@@ -6,7 +6,7 @@ function Testimonies() {
   return (
     <div className='testimonies-container tag' id='testimonies'>
         <div className='testimonies-profiles'>
-            <CCarousel indicators dark transition='crossfade' interval={false} className="testimonies-carousel">
+            <CCarousel indicators dark transition='crossfade' interval={4000}  className="testimonies-carousel">
                 <CCarouselItem>
                     <CImage src={require("../../images/testimonies1.png")} alt="slide 1" />
                 </CCarouselItem>
@@ -15,6 +15,12 @@ function Testimonies() {
                 </CCarouselItem>
                 <CCarouselItem>
                     <CImage src={require("../../images/testimonies3.png")} alt="slide 3" />
+                </CCarouselItem>
+                <CCarouselItem>
+                    <CImage src={require("../../images/testimonies4.png")} alt="slide 4" />
+                </CCarouselItem>
+                <CCarouselItem>
+                    <CImage src={require("../../images/testimonies5.png")} alt="slide 5" />
                 </CCarouselItem>
             </CCarousel>
         </div>

@@ -26,10 +26,6 @@
     color: #F1CD76;
 }
 
-.head-title-1 > span {
-    color: black;
-}
-
 .head-title-2 {
     font-family: 'Inter';
     font-style: normal;
@@ -82,10 +78,6 @@
     height: 50vh;
     margin-top: 1.5rem;
     display: none;
-}
-
-.design-content-head.display {
-    display: inline-block;
 }
 
 .display.home-normal {

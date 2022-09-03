@@ -118,30 +118,6 @@ function Design() {
                         YOUR HOME YOUR STYLE                    
                     </div>
                 </div>
-                <div className='design-content-head'>
-                    <div className='head-title-1'>
-                        GOOD DESIGN
-                    </div>
-                    <div className='head-title-2'>
-                        FOR GOOD MOMENTS                
-                    </div>
-                </div>
-                <div className='design-content-head'>
-                    <div className='head-title-1'>
-                        REFINE <span>YOUR WISH</span>
-                    </div>
-                    <div className='head-title-2'>
-                        WITH FINE DESIGN
-                    </div>
-                </div>
-                <div className='design-content-head'>
-                    <div className='head-title-1'>
-                        PAINT
-                    </div>
-                    <div className='head-title-2'>
-                        YOUR HOME YOUR STYLE                    
-                    </div>
-                </div>
                 <div className='gallery-headers-button-container'>
                     <Button className='active-now' onClick={buttonSelect}>Bedroom</Button>
                     <Button onClick={buttonSelect}>Living Room</Button>
