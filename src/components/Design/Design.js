@@ -123,7 +123,21 @@ function Design() {
                     <Button onClick={buttonSelect}>Living Room</Button>
                     <Button onClick={buttonSelect}>Kitchen</Button>
                     <Button onClick={buttonSelect}>Other</Button>
-                    
+                </div>
+                <div className='gallery-sub-headers-button-container display'>
+                    <span className='sub-btn active-now'>Master</span>
+                    <span className='sub-btn'>Guest</span>
+                    <span className='sub-btn'>Kids</span>
+                </div>
+                <div className='gallery-sub-headers-button-container display'>
+                    <span className='sub-btn active-now'>Home Decor</span>
+                    <span className='sub-btn'>False Ceiling</span>
+                    <span className='sub-btn'>Foyer Area</span>
+                </div>
+                <div className='gallery-sub-headers-button-container display'>
+                    <span className='sub-btn active-now'>Dining</span>
+                    <span className='sub-btn'>Modular Kitchen</span>
+                    <span className='sub-btn'>Crockery Unit</span>
                 </div>
                 <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel display home-normal">
                     <CCarouselItem>
