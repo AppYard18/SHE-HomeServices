@@ -5,19 +5,21 @@ import Design from '../Design/Design';
 import Testimonies from '../Testimonies/testimonies';
 import $ from 'jquery';
 
-// $(document).on("scroll", function() {
-//   var pageTop = $(document).scrollTop();
-//   var pageBottom = pageTop + $(window).height();
-//   var tags = $(".tag");
+$(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".tag");
 
-//   for (var i = 0; i < tags.length; i++) {
-//     var tag = tags[i];
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
 
-//     if ($(tag).position().top < pageBottom) {
-//       $(tag).addClass("visible");
-//     }
-//   }
-// });
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  }
+});
 
 function Home() {
   return (
