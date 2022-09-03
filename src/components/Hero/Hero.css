@@ -29,6 +29,17 @@
     color: #FFFFFF;
 }
 
+.hero-box-text-1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30.0857px;
+    line-height: 18px;
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
 .hero-form {
     display: flex;
     flex-direction: column;
