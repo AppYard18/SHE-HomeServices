@@ -4,6 +4,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Header from './components/Header';
 import Gallery from './components/gallery/gallery';
 import ContactUs from './components/contactUs/contactUs';
+import Footer from './components/Footer/footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/contact' element={<ContactUs />} />
           <Route path='/gallery' element={<Gallery />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );

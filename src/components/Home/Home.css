@@ -19,3 +19,16 @@
     opacity: 1;
     transform: translate(0, 0);
 } */
+
+@media (max-width:432px) {
+    .home_container {
+        background: url("../../images/main_page_banner_mobile.png");
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+}

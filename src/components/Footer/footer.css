@@ -1,0 +1,130 @@
+.footer-container {
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-around;
+}
+
+.footer-company-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-website-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+.footer-company-location-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.footer-website-elements > span > a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contact-address {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    color: #ACACAC;
+}
+
+.footer-contact-phone {
+    display: flex;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    color: #ACACAC;
+}
+
+.footer-company-location {
+    text-align: left;
+    font-size: 17px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.footer-company-email {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+    justify-content: flex-start;
+}
+
+.footer-company-email > span > a {
+    color: #ACACAC;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+span.footer-company-copyright-part1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+span.footer-company-copyright-part2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #EECC7C;
+    margin-left: 5px;
+}
+
+
+@media (max-width:920px) {
+    .footer-container {
+        height: 30vh;
+    }
+}
+
+@media (max-width:432px) {
+    .footer-container {
+        height: 85vh;
+        padding: 1rem 1rem;
+    }
+
+    .footer-company-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-website-elements {
+        gap: 1rem;
+    }
+}
