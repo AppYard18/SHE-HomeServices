@@ -4,7 +4,7 @@ import { CCarousel, CCarouselItem, CImage } from '@coreui/react';
 
 function Testimonies() {
   return (
-    <div className='testimonies-container' id='testimonies'>
+    <div className='testimonies-container tag' id='testimonies'>
         <div className='testimonies-profiles'>
             <CCarousel indicators dark transition='crossfade' interval={false} className="testimonies-carousel">
                 <CCarouselItem>

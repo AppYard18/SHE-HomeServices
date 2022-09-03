@@ -129,11 +129,11 @@
 .image-div-container {
     height: 100%;
     transition: all 0.3s ease-in-out;
+    display: flex;
 }
 
 .image-div-container:hover {
     transform: scale(1.2);
-    z-index: 6;
 }
 
 .carousel-contain:hover .image-div-container:not(:hover) {
@@ -143,6 +143,53 @@
 .image-div-container > img {
     height: 100%;
     width: 100%;
+}
+
+.heart-btn{
+    position: absolute;
+    z-index: 2;
+    display: none;
+    left: 75%;
+}
+
+.content{
+    display: flex;
+    border: 2px solid #eae2e1;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background: white;
+}
+
+.content.heart-active{
+    border-color: #f9b9c4;
+    background: white;
+}
+
+.heart{
+    position: absolute;
+    background: url("../../images/hearts.png") no-repeat;
+    background-size: 2900%;
+    background-position: left;
+    height: 90px;
+    width: 90px;
+    left: -1.3rem;
+    top: -1.2rem;
+}
+
+.heart.heart-active{
+    animation: animate .8s steps(28) 1;
+    background-position: right;
+}
+
+@keyframes animate {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
 }
 
 @media (max-width:964px) {

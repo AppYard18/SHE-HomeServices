@@ -3,6 +3,7 @@ import './Design.css';
 import '@coreui/coreui/dist/css/coreui.min.css';
 import Button from 'react-bootstrap/Button';
 import { CCarousel, CCarouselItem } from '@coreui/react';
+import $ from 'jquery';
 
 function Design() {
 
@@ -88,18 +89,28 @@ function Design() {
 
     const hoverImage = () => {
         document.querySelector(".content-hover-background").classList.add("display-background");
+
+        document.querySelector(".heart-btn").style.display = "block";
     }
     
     const noHoverImage = () => {
         document.querySelector(".content-hover-background").classList.remove("display-background");
+        document.querySelector(".heart-btn").style.display = "none";
     }
+
+    $(document).ready(function(){
+        $('.content').click(function(){
+            $('.content').toggleClass("heart-active")
+            $('.heart').toggleClass("heart-active")
+        });
+    });
 
     useEffect(() => {
         buttonSelect();
     })
 
     return (
-        <div className='design-main-container' id='design'>
+        <div className='design-main-container tag' id='design'>
             <div className='main-content-container'>
                 <div className='design-content-head'>
                     <div className='head-title-1'>
@@ -114,34 +125,70 @@ function Design() {
                     <Button onClick={buttonSelect}>Living Room</Button>
                     <Button onClick={buttonSelect}>Kitchen</Button>
                     <Button onClick={buttonSelect}>Other</Button>
+                    
                 </div>
                 <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel display home-normal">
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design1.png")} alt="image1" />    
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div> 
                             </div>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                                 <img src={require("../../images/design1.png")} alt="image1" />    
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div> 
                             </div>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design1.png")} alt="image1" />    
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>     
                             </div>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design1.png")} alt="image1" />    
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>     
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className="carousel-contain">
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design1.png")} alt="image1" />    
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>     
                             </div>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design1.png")} alt="image1" />    
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>     
                             </div>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design1.png")} alt="image1" />    
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>     
                             </div>
                         </div>
                     </CCarouselItem>
@@ -150,37 +197,72 @@ function Design() {
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design2.png")} alt="image1" />    
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>     
                             </div>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design2.png")} alt="image1" />    
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>     
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design3.png")} alt="image1" />    
+                                <img src={require("../../images/design3.png")} alt="image1" />
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>     
                             </div>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design3.png")} alt="image1" />    
+                                <img src={require("../../images/design3.png")} alt="image1" />
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>     
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className='carousel-contain'>
+                            <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>     
+                            </div>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                                 <img src={require("../../images/design1.png")} alt="image1" />    
-                            </div>
-                            <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design1.png")} alt="image1" />    
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div> 
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design2.png")} alt="image1" />    
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>     
                             </div>
                         </div>
                     </CCarouselItem>
@@ -190,34 +272,23 @@ function Design() {
                         <div className='carousel-contain'>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                                 <img src={require("../../images/design1.png")} alt="image1" />    
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div> 
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design2.png")} alt="image1" />    
-                            </div>
-                        </div>
-                    </CCarouselItem>
-                    <CCarouselItem>
-                        <div className='carousel-contain'>
-                            <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design3.png")} alt="image1" />    
-                            </div>
-                        </div>
-                    </CCarouselItem>
-                    <CCarouselItem>
-                        <div className='carousel-contain'>
-                            <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design1.png")} alt="image1" />    
-                            </div>
-                        </div>
-                    </CCarouselItem>
-                    <CCarouselItem>
-                        <div className='carousel-contain'>
-                            <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
-                                <img src={require("../../images/design2.png")} alt="image1" />    
+                                <img src={require("../../images/design2.png")} alt="image1" />   
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>  
                             </div>
                         </div>
                     </CCarouselItem>
@@ -225,6 +296,11 @@ function Design() {
                         <div className='carousel-contain'>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                                 <img src={require("../../images/design3.png")} alt="image1" />    
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div> 
                             </div>
                         </div>
                     </CCarouselItem>
@@ -232,6 +308,47 @@ function Design() {
                         <div className='carousel-contain'>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                                 <img src={require("../../images/design1.png")} alt="image1" />    
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div> 
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div> 
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div> 
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
+                                <img src={require("../../images/design1.png")} alt="image1" />   
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div>  
                             </div>
                         </div>
                     </CCarouselItem>
@@ -242,15 +359,35 @@ function Design() {
                         <div className='carousel-contain'>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                                 <img src={require("../../images/design2.png")} alt="image1" />    
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div> 
                             </div>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                                 <img src={require("../../images/design2.png")} alt="image1" />    
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div> 
                             </div>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                                 <img src={require("../../images/design2.png")} alt="image1" />    
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div> 
                             </div>
                             <div className='image-div-container' onMouseOver={hoverImage} onMouseLeave={noHoverImage}>
                                 <img src={require("../../images/design2.png")} alt="image1" />    
+                                <div class="heart-btn">
+                                    <div class="content">
+                                        <span class="heart"></span>
+                                    </div>  
+                                </div> 
                             </div>
                         </div>
                     </CCarouselItem>
