@@ -3,7 +3,6 @@ import './Design.css';
 import '@coreui/coreui/dist/css/coreui.min.css';
 import Button from 'react-bootstrap/Button';
 import { CCarousel, CCarouselItem } from '@coreui/react';
-import $ from 'jquery';
 
 function Design() {
 
@@ -94,9 +93,33 @@ function Design() {
     return (
         <div className='design-main-container tag' id='design'>
             <div className='main-content-container'>
-                <div className='design-content-head'>
+                <div className='design-content-head display'>
                     <div className='head-title-1'>
                         DESIGN
+                    </div>
+                    <div className='head-title-2'>
+                        YOUR HOME YOUR STYLE                    
+                    </div>
+                </div>
+                <div className='design-content-head'>
+                    <div className='head-title-1'>
+                        GOOD DESIGN
+                    </div>
+                    <div className='head-title-2'>
+                        FOR GOOD MOMENTS                
+                    </div>
+                </div>
+                <div className='design-content-head'>
+                    <div className='head-title-1'>
+                        <span>REFINE</span> YOUR WISH
+                    </div>
+                    <div className='head-title-2'>
+                        WITH FINE DESIGN
+                    </div>
+                </div>
+                <div className='design-content-head'>
+                    <div className='head-title-1'>
+                        PAINT
                     </div>
                     <div className='head-title-2'>
                         YOUR HOME YOUR STYLE                    

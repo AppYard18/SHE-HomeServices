@@ -61,7 +61,7 @@ function Gallery() {
             <div className='-gallery-main-content-container'>
                 <div className='gallery-content-head'>
                     <div className='head-title'>
-                        SOME OF OUR LATEST DESIGNS
+                        SOME OF OUR <span>LATEST DESIGNS</span>
                     </div>
                 </div>
                 <div className='carousel-head'>

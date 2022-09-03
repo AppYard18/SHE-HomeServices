@@ -15,6 +15,7 @@
     align-items: flex-start;
     margin-top: 10%;
     margin-left: 5%;
+    display: none;
 }
 
 .head-title-1 {
@@ -78,6 +79,10 @@
     height: 50vh;
     margin-top: 1.5rem;
     display: none;
+}
+
+.design-content-head.display {
+    display: inline-block;
 }
 
 .display.home-normal {

@@ -8,13 +8,13 @@ function Testimonies() {
         <div className='testimonies-profiles'>
             <CCarousel indicators dark transition='crossfade' interval={false} className="testimonies-carousel">
                 <CCarouselItem>
-                    <CImage src={require("../../images/design1.png")} alt="slide 1" />
+                    <CImage src={require("../../images/testimonies1.png")} alt="slide 1" />
                 </CCarouselItem>
                 <CCarouselItem>
-                    <CImage src={require("../../images/design2.png")} alt="slide 2" />
+                    <CImage src={require("../../images/testimonies2.png")} alt="slide 2" />
                 </CCarouselItem>
                 <CCarouselItem>
-                    <CImage src={require("../../images/design3.png")} alt="slide 3" />
+                    <CImage src={require("../../images/testimonies3.png")} alt="slide 3" />
                 </CCarouselItem>
             </CCarousel>
         </div>
