@@ -16,6 +16,8 @@
     margin-top: 10%;
     margin-left: 5%;
     display: none;
+    width: 100%;
+    text-align: left;
 }
 
 .head-title-1 {
@@ -24,7 +26,11 @@
     font-weight: 600;
     font-size: 60px;
     line-height: 60px;
-    color: #000000;
+    color: #F1CD76;
+}
+
+.head-title-1 > span {
+    color: black;
 }
 
 .head-title-2 {

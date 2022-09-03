@@ -165,10 +165,6 @@
         display: none;    
     }
 
-    .hero-box-text-1 {
-        display: none;
-    }
-
     .hero-form {
         padding-top: 40%;
         margin-left: 0;
@@ -191,10 +187,17 @@
 
     .hero-box {
         height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-box-text-1 {
+        font-size: 28px;
+        margin-left: 10%;
     }
 
     .hero-box-title {
-        padding-top: 15%;
+        padding-top: 10%;
     }
     
     .hero-box-title > svg {

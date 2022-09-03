@@ -9,6 +9,7 @@ function Design() {
     const buttonSelect = () => {
         let buttons = document.querySelectorAll(".btn");
         let carousels = document.querySelectorAll(".custom-carousel");
+        let content_heads = document.querySelectorAll(".design-content-head");
         
         for(let i = 0; i<buttons.length; i++) {
             buttons[i].addEventListener('click', () => {
@@ -18,6 +19,10 @@ function Design() {
                     buttons[1].classList.remove("active-now");
                     buttons[2].classList.remove("active-now");
                     buttons[3].classList.remove("active-now");
+                    content_heads[0].classList.add("display");
+                    content_heads[1].classList.remove("display");
+                    content_heads[2].classList.remove("display");
+                    content_heads[3].classList.remove("display");
                     carousels[0].classList.add("display");
                     carousels[1].classList.add("display");
                     carousels[2].classList.add("display");
@@ -35,6 +40,10 @@ function Design() {
                     buttons[1].classList.add("active-now");
                     buttons[2].classList.remove("active-now");
                     buttons[3].classList.remove("active-now");
+                    content_heads[0].classList.remove("display");
+                    content_heads[1].classList.add("display");
+                    content_heads[2].classList.remove("display");
+                    content_heads[3].classList.remove("display");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -52,6 +61,10 @@ function Design() {
                     buttons[1].classList.remove("active-now");
                     buttons[2].classList.add("active-now");
                     buttons[3].classList.remove("active-now");
+                    content_heads[0].classList.remove("display");
+                    content_heads[1].classList.remove("display");
+                    content_heads[2].classList.add("display");
+                    content_heads[3].classList.remove("display");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -69,6 +82,10 @@ function Design() {
                     buttons[1].classList.remove("active-now");
                     buttons[2].classList.remove("active-now");
                     buttons[3].classList.add("active-now");
+                    content_heads[0].classList.remove("display");
+                    content_heads[1].classList.remove("display");
+                    content_heads[2].classList.remove("display");
+                    content_heads[3].classList.add("display");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -111,7 +128,7 @@ function Design() {
                 </div>
                 <div className='design-content-head'>
                     <div className='head-title-1'>
-                        <span>REFINE</span> YOUR WISH
+                        REFINE <span>YOUR WISH</span>
                     </div>
                     <div className='head-title-2'>
                         WITH FINE DESIGN

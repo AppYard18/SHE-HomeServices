@@ -48,7 +48,7 @@ function Footer() {
         </div>
         <div className="footer-company-copyright">
             <span className='footer-company-copyright-part1'>SHE © 2022 All Rights Reserved.</span> 
-            <span className='footer-company-copyright-part2'>    Designed By AppYard</span>
+            <span className='footer-company-copyright-part2'>    <a href="http://appyard.co.in/">Designed By AppYard</a></span>
         </div>
     </div>
   )

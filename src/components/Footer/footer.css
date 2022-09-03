@@ -93,7 +93,7 @@ span.footer-company-copyright-part1 {
     text-transform: uppercase;
 }
 
-span.footer-company-copyright-part2 {
+span.footer-company-copyright-part2  > a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -102,6 +102,7 @@ span.footer-company-copyright-part2 {
     text-transform: uppercase;
     color: #EECC7C;
     margin-left: 5px;
+    text-decoration: none;
 }
 
 
