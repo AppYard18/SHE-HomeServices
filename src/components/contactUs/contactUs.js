@@ -10,6 +10,7 @@ function ContactUs() {
             <form className='contact-main-form'>
                 <Form.Control type="text" placeholder="Your Name" />
                 <Form.Control type="text" placeholder="Your Email Id" />
+                <Form.Control type="text" placeholder="Enter Your Mobile Number" />
                 <button className='contact-button'>Book a Free Design Session</button>
                 <div className='call-div'>
                     <span className='span-1'>Call</span>
