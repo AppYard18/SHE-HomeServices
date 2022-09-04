@@ -32,10 +32,22 @@
     font-style: normal;
     font-weight: 600;
     font-size: 35.6917px;
-    line-height: 43px;
-    margin-top: 3rem;
+    line-height: 23px;
+    margin-top: 2rem;
     text-align: left;
     color: #000000;
+    margin-left: 7rem;
+}
+
+.carousel-head-main {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35.6917px;
+    line-height: 23px;
+    margin-top: 2rem;
+    text-align: left;
+    color: #F4D68F;
     margin-left: 7rem;
 }
 
@@ -118,6 +130,10 @@
         margin-left: 2rem;
     }
 
+    .carousel-head-main {
+        margin-left: 2rem;
+    }
+
     .gallery-main-container {
         padding: 0 0.5rem;
     }
@@ -129,7 +145,7 @@
 
 @media (max-width:432px) {
     .gallery-carousel {
-        height: 40vh;
+        height: 45vh;
     }
 
     .gallery-main-container {
@@ -152,6 +168,11 @@
     }
 
     .carousel-head {
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+
+    .carousel-head-main {
         font-size: 30px;
         margin-top: 2rem;
     }

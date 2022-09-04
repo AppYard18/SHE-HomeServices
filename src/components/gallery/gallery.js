@@ -64,9 +64,12 @@ function Gallery() {
                         SOME OF OUR <span>LATEST DESIGNS</span>
                     </div>
                 </div>
-                <div className='carousel-head'>
+                <div className='carousel-head-main'>
                     Bedroom
                 </div>
+                <div className='carousel-head'>
+                    Master Bedroom
+                </div>
                 <Swiper
                     spaceBetween={1}
                     slidesPerView={4}
@@ -116,8 +119,113 @@ function Gallery() {
                     ))}
                 </Swiper>
                 <div className='carousel-head'>
+                    Guest Bedroom
+                </div>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={4}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel normal"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={2}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel tablet"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={1}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel mobile"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <div className='carousel-head'>
+                    Kids Bedroom
+                </div>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={4}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel normal"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={2}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel tablet"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={1}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel mobile"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <div className='carousel-head-main'>
                     Living Room
                 </div>
+                <div className='carousel-head'>
+                    Home Decor
+                </div>
                 <Swiper
                     spaceBetween={1}
                     slidesPerView={4}
@@ -167,7 +275,112 @@ function Gallery() {
                     ))}
                 </Swiper>
                 <div className='carousel-head'>
+                    False Ceiling
+                </div>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={4}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel normal"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={2}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel tablet"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={1}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel mobile"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <div className='carousel-head'>
+                    Foyer Area
+                </div>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={4}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel normal"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={2}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel tablet"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={1}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel mobile"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <div className='carousel-head-main'>
                     Kitchen
+                </div>
+                <div className='carousel-head'>
+                    Dining Area
                 </div>
                 <Swiper
                     spaceBetween={1}
@@ -218,6 +431,108 @@ function Gallery() {
                     ))}
                 </Swiper>
                 <div className='carousel-head'>
+                    Modular Kitchen
+                </div>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={4}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel normal"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={2}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel tablet"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={1}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel mobile"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <div className='carousel-head'>
+                    Crockery Unit
+                </div>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={4}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel normal"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={2}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel tablet"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={1}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel mobile"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <div className='carousel-head-main'>
                     Others
                 </div>
                 <Swiper
@@ -264,6 +579,111 @@ function Gallery() {
                         <SwiperSlide key={i} className="carousel-inner">
                             <div className='image-div-container' key={i}>
                                 <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/Other%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <div className='carousel-head-main'>
+                    Paint
+                </div>
+                <div className='carousel-head'>
+                    Wall Painting
+                </div>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={4}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel normal"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={2}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel tablet"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={1}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel mobile"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <div className='carousel-head'>
+                    Wall Design
+                </div>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={4}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel normal"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={2}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel tablet"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={1}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel mobile"
+                >
+                    {bedroomDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/bedroom%2F" + data + "?alt=media&token=52762cce-47e8-441b-a2fa-5cd70feae236"} key={i} alt="image1" />    
                             </div> 
                         </SwiperSlide>
                     ))}
