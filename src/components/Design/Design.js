@@ -8,8 +8,19 @@ function Design() {
 
     const buttonSelect = () => {
         let buttons = document.querySelectorAll(".btn");
+        let sub_buttons_container = document.querySelectorAll(".gallery-sub-headers-button-container");
+        let sub_buttons = document.querySelectorAll(".sub-btn");
         let carousels = document.querySelectorAll(".custom-carousel");
-        let content_heads = document.querySelectorAll(".design-content-head");
+
+        sub_buttons[0].classList.add("active-now");
+        sub_buttons[3].classList.add("active-now");
+        sub_buttons[6].classList.add("active-now");
+        sub_buttons[1].classList.remove("active-now");
+        sub_buttons[2].classList.remove("active-now");
+        sub_buttons[4].classList.remove("active-now");
+        sub_buttons[5].classList.remove("active-now");
+        sub_buttons[7].classList.remove("active-now");
+        sub_buttons[8].classList.remove("active-now");
         
         for(let i = 0; i<buttons.length; i++) {
             buttons[i].addEventListener('click', () => {
@@ -19,10 +30,9 @@ function Design() {
                     buttons[1].classList.remove("active-now");
                     buttons[2].classList.remove("active-now");
                     buttons[3].classList.remove("active-now");
-                    content_heads[0].classList.add("display");
-                    content_heads[1].classList.remove("display");
-                    content_heads[2].classList.remove("display");
-                    content_heads[3].classList.remove("display");
+                    sub_buttons_container[0].classList.add("display");
+                    sub_buttons_container[1].classList.remove("display");
+                    sub_buttons_container[2].classList.remove("display");
                     carousels[0].classList.add("display");
                     carousels[1].classList.add("display");
                     carousels[2].classList.add("display");
@@ -35,57 +45,32 @@ function Design() {
                     carousels[9].classList.remove("display");
                     carousels[10].classList.remove("display");
                     carousels[11].classList.remove("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
                 } else if (i === 1) {
                     buttons[0].classList.remove("active-now");
                     buttons[1].classList.add("active-now");
                     buttons[2].classList.remove("active-now");
                     buttons[3].classList.remove("active-now");
-                    content_heads[0].classList.remove("display");
-                    content_heads[1].classList.add("display");
-                    content_heads[2].classList.remove("display");
-                    content_heads[3].classList.remove("display");
-                    carousels[0].classList.remove("display");
-                    carousels[1].classList.remove("display");
-                    carousels[2].classList.remove("display");
-                    carousels[3].classList.add("display");
-                    carousels[4].classList.add("display");
-                    carousels[5].classList.add("display");
-                    carousels[6].classList.remove("display");
-                    carousels[7].classList.remove("display");
-                    carousels[8].classList.remove("display");
-                    carousels[9].classList.remove("display");
-                    carousels[10].classList.remove("display");
-                    carousels[11].classList.remove("display");
-                } else if (i === 2) {
-                    buttons[0].classList.remove("active-now");
-                    buttons[1].classList.remove("active-now");
-                    buttons[2].classList.add("active-now");
-                    buttons[3].classList.remove("active-now");
-                    content_heads[0].classList.remove("display");
-                    content_heads[1].classList.remove("display");
-                    content_heads[2].classList.add("display");
-                    content_heads[3].classList.remove("display");
-                    carousels[0].classList.remove("display");
-                    carousels[1].classList.remove("display");
-                    carousels[2].classList.remove("display");
-                    carousels[3].classList.remove("display");
-                    carousels[4].classList.remove("display");
-                    carousels[5].classList.remove("display");
-                    carousels[6].classList.add("display");
-                    carousels[7].classList.add("display");
-                    carousels[8].classList.add("display");
-                    carousels[9].classList.remove("display");
-                    carousels[10].classList.remove("display");
-                    carousels[11].classList.remove("display");
-                } else if (i === 3) {
-                    buttons[0].classList.remove("active-now");
-                    buttons[1].classList.remove("active-now");
-                    buttons[2].classList.remove("active-now");
-                    buttons[3].classList.add("active-now");
-                    content_heads[0].classList.remove("display");
-                    content_heads[1].classList.remove("display");
-                    content_heads[2].classList.remove("display");
-                    content_heads[3].classList.add("display");
+                    sub_buttons_container[0].classList.remove("display");
+                    sub_buttons_container[1].classList.add("display");
+                    sub_buttons_container[2].classList.remove("display");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -98,6 +83,417 @@ function Design() {
                     carousels[9].classList.add("display");
                     carousels[10].classList.add("display");
                     carousels[11].classList.add("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
+                } else if (i === 2) {
+                    buttons[0].classList.remove("active-now");
+                    buttons[1].classList.remove("active-now");
+                    buttons[2].classList.add("active-now");
+                    buttons[3].classList.remove("active-now");
+                    sub_buttons_container[0].classList.remove("display");
+                    sub_buttons_container[1].classList.remove("display");
+                    sub_buttons_container[2].classList.add("display");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.remove("display");
+                    carousels[4].classList.remove("display");
+                    carousels[5].classList.remove("display");
+                    carousels[6].classList.remove("display");
+                    carousels[7].classList.remove("display");
+                    carousels[8].classList.remove("display");
+                    carousels[9].classList.remove("display");
+                    carousels[10].classList.remove("display");
+                    carousels[11].classList.remove("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.add("display");
+                    carousels[19].classList.add("display");
+                    carousels[20].classList.add("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
+                } else if (i === 3) {
+                    buttons[0].classList.remove("active-now");
+                    buttons[1].classList.remove("active-now");
+                    buttons[2].classList.remove("active-now");
+                    buttons[3].classList.add("active-now");
+                    sub_buttons_container[0].classList.remove("display");
+                    sub_buttons_container[1].classList.remove("display");
+                    sub_buttons_container[2].classList.remove("display");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.remove("display");
+                    carousels[4].classList.remove("display");
+                    carousels[5].classList.remove("display");
+                    carousels[6].classList.remove("display");
+                    carousels[7].classList.remove("display");
+                    carousels[8].classList.remove("display");
+                    carousels[9].classList.remove("display");
+                    carousels[10].classList.remove("display");
+                    carousels[11].classList.remove("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.add("display");
+                    carousels[28].classList.add("display");
+                    carousels[29].classList.add("display");
+                }
+            })
+        }
+    }
+
+    const subButtonSelect = () => {
+        let sub_buttons = document.querySelectorAll(".sub-btn");
+        let carousels = document.querySelectorAll(".custom-carousel");
+
+        for(let i = 0; i<sub_buttons.length; i++) {
+            sub_buttons[i].addEventListener('click', () => {
+                if (i === 0) {
+                    sub_buttons[0].classList.add("active-now");
+                    sub_buttons[1].classList.remove("active-now");
+                    sub_buttons[2].classList.remove("active-now");
+                    carousels[0].classList.add("display");
+                    carousels[1].classList.add("display");
+                    carousels[2].classList.add("display");
+                    carousels[3].classList.remove("display");
+                    carousels[4].classList.remove("display");
+                    carousels[5].classList.remove("display");
+                    carousels[6].classList.remove("display");
+                    carousels[7].classList.remove("display");
+                    carousels[8].classList.remove("display");
+                    carousels[9].classList.remove("display");
+                    carousels[10].classList.remove("display");
+                    carousels[11].classList.remove("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
+                } else if (i === 1) {
+                    sub_buttons[0].classList.remove("active-now");
+                    sub_buttons[1].classList.add("active-now");
+                    sub_buttons[2].classList.remove("active-now");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.add("display");
+                    carousels[4].classList.add("display");
+                    carousels[5].classList.add("display");
+                    carousels[6].classList.remove("display");
+                    carousels[7].classList.remove("display");
+                    carousels[8].classList.remove("display");
+                    carousels[9].classList.remove("display");
+                    carousels[10].classList.remove("display");
+                    carousels[11].classList.remove("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
+                } else if (i === 2) {
+                    sub_buttons[0].classList.remove("active-now");
+                    sub_buttons[1].classList.remove("active-now");
+                    sub_buttons[2].classList.add("active-now");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.remove("display");
+                    carousels[4].classList.remove("display");
+                    carousels[5].classList.remove("display");
+                    carousels[6].classList.add("display");
+                    carousels[7].classList.add("display");
+                    carousels[8].classList.add("display");
+                    carousels[9].classList.remove("display");
+                    carousels[10].classList.remove("display");
+                    carousels[11].classList.remove("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
+                } else if (i === 3) {
+                    sub_buttons[3].classList.remove("active-now");
+                    sub_buttons[4].classList.remove("active-now");
+                    sub_buttons[5].classList.remove("active-now");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.remove("display");
+                    carousels[4].classList.remove("display");
+                    carousels[5].classList.remove("display");
+                    carousels[6].classList.remove("display");
+                    carousels[7].classList.remove("display");
+                    carousels[8].classList.remove("display");
+                    carousels[9].classList.add("display");
+                    carousels[10].classList.add("display");
+                    carousels[11].classList.add("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
+                } else if (i === 4) {
+                    sub_buttons[3].classList.remove("active-now");
+                    sub_buttons[4].classList.add("active-now");
+                    sub_buttons[5].classList.remove("active-now");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.remove("display");
+                    carousels[4].classList.remove("display");
+                    carousels[5].classList.remove("display");
+                    carousels[6].classList.remove("display");
+                    carousels[7].classList.remove("display");
+                    carousels[8].classList.remove("display");
+                    carousels[9].classList.remove("display");
+                    carousels[10].classList.remove("display");
+                    carousels[11].classList.remove("display");
+                    carousels[12].classList.add("display");
+                    carousels[13].classList.add("display");
+                    carousels[14].classList.add("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
+                } else if (i === 5) {
+                    sub_buttons[3].classList.remove("active-now");
+                    sub_buttons[4].classList.remove("active-now");
+                    sub_buttons[5].classList.add("active-now");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.remove("display");
+                    carousels[4].classList.remove("display");
+                    carousels[5].classList.remove("display");
+                    carousels[6].classList.remove("display");
+                    carousels[7].classList.remove("display");
+                    carousels[8].classList.remove("display");
+                    carousels[9].classList.remove("display");
+                    carousels[10].classList.remove("display");
+                    carousels[11].classList.remove("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.add("display");
+                    carousels[16].classList.add("display");
+                    carousels[17].classList.add("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
+                } else if (i === 6) {
+                    sub_buttons[6].classList.remove("active-now");
+                    sub_buttons[7].classList.remove("active-now");
+                    sub_buttons[8].classList.remove("active-now");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.remove("display");
+                    carousels[4].classList.remove("display");
+                    carousels[5].classList.remove("display");
+                    carousels[6].classList.remove("display");
+                    carousels[7].classList.remove("display");
+                    carousels[8].classList.remove("display");
+                    carousels[9].classList.remove("display");
+                    carousels[10].classList.remove("display");
+                    carousels[11].classList.remove("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.add("display");
+                    carousels[19].classList.add("display");
+                    carousels[20].classList.add("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
+                } else if (i === 7) {
+                    sub_buttons[6].classList.remove("active-now");
+                    sub_buttons[7].classList.add("active-now");
+                    sub_buttons[8].classList.remove("active-now");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.remove("display");
+                    carousels[4].classList.remove("display");
+                    carousels[5].classList.remove("display");
+                    carousels[6].classList.remove("display");
+                    carousels[7].classList.remove("display");
+                    carousels[8].classList.remove("display");
+                    carousels[9].classList.remove("display");
+                    carousels[10].classList.remove("display");
+                    carousels[11].classList.remove("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.add("display");
+                    carousels[22].classList.add("display");
+                    carousels[23].classList.add("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
+                } else if (i === 8) {
+                    sub_buttons[6].classList.remove("active-now");
+                    sub_buttons[7].classList.remove("active-now");
+                    sub_buttons[8].classList.add("active-now");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.remove("display");
+                    carousels[4].classList.remove("display");
+                    carousels[5].classList.remove("display");
+                    carousels[6].classList.remove("display");
+                    carousels[7].classList.remove("display");
+                    carousels[8].classList.remove("display");
+                    carousels[9].classList.remove("display");
+                    carousels[10].classList.remove("display");
+                    carousels[11].classList.remove("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.add("display");
+                    carousels[25].classList.add("display");
+                    carousels[26].classList.add("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
                 }
             })
         }
@@ -105,6 +501,7 @@ function Design() {
 
     useEffect(() => {
         buttonSelect();
+        subButtonSelect();
     })
 
     return (
@@ -125,20 +522,24 @@ function Design() {
                     <Button onClick={buttonSelect}>Other</Button>
                 </div>
                 <div className='gallery-sub-headers-button-container display'>
-                    <span className='sub-btn active-now'>Master</span>
-                    <span className='sub-btn'>Guest</span>
-                    <span className='sub-btn'>Kids</span>
+                    <span className='sub-btn active-now' onClick={subButtonSelect}>Master</span>
+                    <span className='sub-btn' onClick={subButtonSelect}>Guest</span>
+                    <span className='sub-btn' onClick={subButtonSelect}>Kids</span>
                 </div>
-                <div className='gallery-sub-headers-button-container display'>
-                    <span className='sub-btn active-now'>Home Decor</span>
-                    <span className='sub-btn'>False Ceiling</span>
-                    <span className='sub-btn'>Foyer Area</span>
+                <div className='gallery-sub-headers-button-container'>
+                    <span className='sub-btn active-now' onClick={subButtonSelect}>Home Decor</span>
+                    <span className='sub-btn' onClick={subButtonSelect}>False Ceiling</span>
+                    <span className='sub-btn' onClick={subButtonSelect}>Foyer Area</span>
                 </div>
-                <div className='gallery-sub-headers-button-container display'>
-                    <span className='sub-btn active-now'>Dining</span>
-                    <span className='sub-btn'>Modular Kitchen</span>
-                    <span className='sub-btn'>Crockery Unit</span>
+                <div className='gallery-sub-headers-button-container'>
+                    <span className='sub-btn active-now' onClick={subButtonSelect}>Dining</span>
+                    <span className='sub-btn' onClick={subButtonSelect}>Modular Kitchen</span>
+                    <span className='sub-btn' onClick={subButtonSelect}>Crockery Unit</span>
                 </div>
+
+                {/* Bedroom Carousels */}
+
+                {/* Master Bedrrom Carousel */}
                 <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel display home-normal">
                     <CCarouselItem>
                         <div className='carousel-contain'>
@@ -261,6 +662,7 @@ function Design() {
                     </CCarouselItem>
                 </CCarousel>
 
+                {/* Guest Bedroom Carousel */}
                 <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-normal">
                 <CCarouselItem>
                         <div className='carousel-contain'>
@@ -383,6 +785,378 @@ function Design() {
                     </CCarouselItem>
                 </CCarousel>
 
+                {/* Kids Bedroom Carousel */}
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-normal">
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className="carousel-contain">
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-tablet">
+                <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-mobile">
+                <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+
+                {/* Living Room Carousels */}
+
+                {/* Home Decor Carousel */}
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-normal">
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" /> 
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className="carousel-contain">
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel con  trols transition="crossfade" dark interval={false} className="custom-carousel home-tablet">
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" /> 
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-mobile">
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+
+                {/* False Ceiling Carousel */}
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-normal">
+                <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className="carousel-contain">
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-tablet">
+                <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-mobile">
+                <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+
+                {/* Foyer Area Carousel */}
                 <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-normal">
                     <CCarouselItem>
                         <div className='carousel-contain'>
@@ -504,6 +1278,379 @@ function Design() {
                         </div>
                     </CCarouselItem>
                 </CCarousel>
+
+                {/* Kitchen Carousels */}
+
+                {/* Dining Carousel */}
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-normal">
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" /> 
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className="carousel-contain">
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-tablet">
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" /> 
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-mobile">
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+
+                {/* Modular Kitchen Carousel */}
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-normal">
+                <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className="carousel-contain">
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-tablet">
+                <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-mobile">
+                <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+
+                {/* Crockery Unit Carousel */}
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-normal">
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className="carousel-contain">
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-tablet">
+                <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-mobile">
+                <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design2.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design3.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/design1.png")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+
+                {/* Other Carousels */}
 
                 <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-normal">
                 <CCarouselItem>

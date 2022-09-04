@@ -73,10 +73,42 @@
     color: black;
 }
 
+.gallery-sub-headers-button-container {
+    width: 30%;
+    justify-content: flex-start;
+    margin-left: 5rem;
+    gap: 1.5rem;
+    background: rgba(187, 187, 187, 0.25);
+    box-shadow: 7px 4px 4px rgba(241, 205, 118, 0.11);
+    border-radius: 7px;
+    padding: 0.5rem 2rem;
+    margin-top: 1%;
+    display: none;
+}
+
+.gallery-sub-headers-button-container .sub-btn {
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-sub-headers-button-container .sub-btn:hover {
+    border-bottom: 3px solid #F1CD76;
+}
+
+.gallery-sub-headers-button-container .active-now {
+    border-bottom: 3px solid #F1CD76;
+}
+
+.gallery-sub-headers-button-container.display {
+    display: flex;
+}
+
 .custom-carousel {
     width: 100%;
     height: 50vh;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     display: none;
 }
 
@@ -159,8 +191,7 @@
     }
 
     .design-main-container {
-        padding: 0 0.5rem;
-        margin-top: 20%;
+        padding: 3rem 0.5rem;
     }
 
     .head-title-1 {
@@ -177,6 +208,12 @@
 
     .main-content-container .carousel .carousel-inner .carousel-item {
         padding: 4rem 3rem;
+    }
+
+    .gallery-sub-headers-button-container {
+        margin-left: 3rem;
+        margin-top: 2rem;
+        width: 40%;
     }
 }
 
@@ -219,6 +256,11 @@
     .gallery-headers-button-container {
         gap: 1rem;
         margin-top: 0.5rem;
+    }
+
+    .gallery-sub-headers-button-container {
+        margin-left: 1.5rem;
+        width: 90%;
     }
 
     .custom-carousel {
