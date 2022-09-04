@@ -1,12 +1,31 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Hero.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
+import emailjs from '@emailjs/browser';
 
 
 function Hero() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ms35tkb', 'template_pjcnach', form.current, 's3mFzbnemRtbDkiy1')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      let inputs = document.querySelectorAll(".form-control");
+      for (let i = 0; i<inputs.length; i++) {
+          inputs[i].value = "";
+      }
+  };
+
   return (
     <Container id="home" className='hero-container'>
       <Row>
@@ -29,11 +48,11 @@ function Hero() {
           <div className='hero-form'>
             <div className='main-form-container'>
               <span className='form-head-title'>Meet a Designer</span>
-              <form className='main-form'>
-                <Form.Control type="text" placeholder="Enter Your Name" />
-                <Form.Control type="text" placeholder="Enter Your Email Id" />
-                <Form.Control type="text" placeholder="Enter Your Mobile Number" />
-                <button type='button' className='hero-btn'>Book a Free Design Session</button>
+              <form className='main-form' ref={form} onSubmit={sendEmail}>
+                <Form.Control type="text" placeholder="Enter Your Name" name="user_name" />
+                <Form.Control type="text" placeholder="Enter Your Email Id" name="user_email" />
+                <Form.Control type="text" placeholder="Enter Your Mobile Number" name="user_phone" />
+                <button type='submit' className='hero-btn'>Book a Free Design Session</button>
               </form>
             </div>
           </div>

@@ -104,8 +104,8 @@
     }
 
     .testimonies-carousel {
-        height: 70%;
-        width: 70%;
+        height: 350px;
+        width: 350px;
         margin-bottom: 10%;
     }
 }
