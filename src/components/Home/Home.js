@@ -4,6 +4,7 @@ import Hero from '../Hero/Hero';
 import Design from '../Design/Design';
 import Testimonies from '../Testimonies/testimonies';
 import $ from 'jquery';
+import Paint from '../Paint/paint';
 
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
@@ -25,6 +26,7 @@ function Home() {
         <div className="content-hover-background"></div>
         <Hero />
         <Design />
+        <Paint />
         <Testimonies />
     </div>
   )

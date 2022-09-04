@@ -1,0 +1,237 @@
+.paint-main-container {
+    height: 100vh;
+    padding-bottom: 5%;
+    padding: 0 3rem;
+}
+
+.main-content-container {
+    height: 100%;
+}
+
+.paint-content-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.head-title-1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+    color: #F1CD76;
+}
+
+.head-title-2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.gallery-headers-button-container {
+    display: flex;
+    width: 80%;
+    gap: 2rem;
+    margin-left: 5%;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.gallery-headers-button-container .btn {
+    background: #BEBAB1;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.gallery-headers-button-container .btn:hover {
+    background: #F1CD76;
+    color: black;
+}
+
+.gallery-headers-button-container .btn:focus {
+    background: #F1CD76;
+    color: black;
+    border: none;
+    box-shadow: none;
+}
+
+.gallery-headers-button-container .active-now {
+    background-color: #F1CD76;
+    color: black;
+}
+
+.custom-carousel {
+    width: 100%;
+    height: 50vh;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.display.home-normal {
+    display: block;
+}
+
+.display.home-tablet {
+    display: none;
+}
+
+.display.home-mobile {
+    display: none;
+}
+
+.carousel .carousel-control-prev {
+    width: 4rem;
+}
+
+.carousel .carousel-control-next {
+    width: 4rem;
+}
+
+.carousel-inner {
+    height: 100%;
+    width: 100%;
+}
+
+.main-content-container .carousel .carousel-inner .carousel-item {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.carousel-contain {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.image-div-container {
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+}
+
+.image-div-container:hover {
+    transform: scale(1.2);
+}
+
+.carousel-contain:hover .image-div-container:not(:hover) {
+    filter: blur(10px);
+}
+
+.image-div-container > img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:964px) {
+    .display.home-normal {
+        display: none;
+    }
+    
+    .display.home-tablet {
+        display: block;
+    }
+    
+    .display.home-mobile {
+        display: none;
+    }
+
+    .paint-main-container {
+        padding: 3rem 0.5rem;
+    }
+
+    .head-title-1 {
+        line-height: 70px;
+    }
+
+    .head-title-2 {
+        line-height: 70px;
+    }
+
+    .gallery-headers-button-container {
+        margin-top: 5%;
+    }
+
+    .main-content-container .carousel .carousel-inner .carousel-item {
+        padding: 4rem 3rem;
+    }
+
+    .gallery-sub-headers-button-container {
+        margin-left: 3rem;
+        margin-top: 2rem;
+        width: 40%;
+    }
+}
+
+@media (max-width:432px) {
+    .display.home-normal {
+        display: none;
+    }
+    
+    .display.home-tablet {
+        display: none;
+    }
+    
+    .display.home-mobile {
+        display: block;
+    }
+
+    .paint-main-container {
+        padding: 0 0.5rem;
+    }
+
+    .main-content-container {
+        margin-top: 30%;
+    }
+
+    .head-title-1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .head-title-2 {
+        font-size: 25px;
+        line-height: 50px;
+        text-align: left;
+    }
+
+    .main-content-container .carousel .carousel-inner .carousel-item {
+        padding: 2rem 3rem;
+    }
+
+    .gallery-headers-button-container {
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .gallery-sub-headers-button-container {
+        margin-left: 1.5rem;
+        width: 90%;
+    }
+
+    .custom-carousel {
+        margin-top: 0;
+    }
+}
