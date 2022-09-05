@@ -528,7 +528,7 @@ function Design() {
                 </div>
                 <div className='gallery-sub-headers-button-container'>
                     <span className='sub-btn active-now' onClick={subButtonSelect}>Home Decor</span>
-                    <span className='sub-btn' onClick={subButtonSelect}>False Ceiling</span>
+                    <span className='sub-btn' onClick={subButtonSelect}>False Ceiling and Lighting</span>
                     <span className='sub-btn' onClick={subButtonSelect}>Foyer Area</span>
                 </div>
                 <div className='gallery-sub-headers-button-container'>

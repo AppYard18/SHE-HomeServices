@@ -98,14 +98,14 @@
     }
 
     .testimonies-head-title {
-        font-size: 55px;
+        font-size: 48px;
         color: black;
         line-height: 60px;
     }
 
     .testimonies-carousel {
-        height: 350px;
-        width: 350px;
+        height: 320px;
+        width: 320px;
         margin-bottom: 10%;
     }
 }
