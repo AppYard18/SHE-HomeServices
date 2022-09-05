@@ -49,9 +49,9 @@ function Hero() {
             <div className='main-form-container'>
               <span className='form-head-title'>Meet a Designer</span>
               <form className='main-form' ref={form} onSubmit={sendEmail}>
-                <Form.Control type="text" placeholder="Enter Your Name" name="user_name" />
-                <Form.Control type="text" placeholder="Enter Your Email Id" name="user_email" />
-                <Form.Control type="text" placeholder="Enter Your Mobile Number" name="user_phone" />
+                <Form.Control type="text" placeholder="Your Name" name='user_name' required />
+                <Form.Control type="email" placeholder="Your Email Id" name='user_email' required />
+                <Form.Control type="tel" placeholder="Enter Your Mobile Number" name='user_phone' pattern='[0-9]{10}' required />
                 <button type='submit' className='hero-btn'>Book a Free Design Session</button>
               </form>
             </div>
