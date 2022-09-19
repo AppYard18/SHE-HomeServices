@@ -72,13 +72,13 @@
     align-items: center;
 }
 
-.call-div .span-2 {
+.call-div .span-2 > a{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 30.8351px;
     line-height: 45px;
-
+    text-decoration: none;
     color: #F1CD76;
 }
 

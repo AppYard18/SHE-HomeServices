@@ -40,7 +40,7 @@ function ContactUs() {
                             </svg>
                         </a>
                     </span>
-                    <span className='span-2'>+91 XXXXX XXXXX</span>
+                    <span className='span-2'><a href="tel:+919611119067">+91 96111 19067</a></span>
                 </div>
                 <div className='form-text'>
                     <span className='form-text-span'>Leave a missed call and we'll reach <br /> out to you in 10min.</span>

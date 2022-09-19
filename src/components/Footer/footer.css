@@ -59,6 +59,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
+}
+
+.footer-contact-phone > span > a {
+    text-decoration: none;
     color: #ACACAC;
 }
 
