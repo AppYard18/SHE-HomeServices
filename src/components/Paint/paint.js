@@ -231,37 +231,40 @@ function Paint() {
                 <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0177.jpg")} alt="image1" />
                             </div>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
-                            </div>
-                        </div>
-                    </CCarouselItem>
-                    <CCarouselItem>
-                        <div className='carousel-contain'>
-                            <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
-                            </div>
-                            <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0178.jpg")} alt="image1" />
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0180.jpg")} alt="image1" />
                             </div>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0182.jpg")} alt="image1" />
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0183.jpg")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0185.jpg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0187.jpg")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0190.jpg")} alt="image1" />    
                             </div>
                         </div>
                     </CCarouselItem>
@@ -270,49 +273,56 @@ function Paint() {
                 <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0177.jpg")} alt="image1" />
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0178.jpg")} alt="image1" />
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0180.jpg")} alt="image1" />
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0182.jpg")} alt="image1" />
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0183.jpg")} alt="image1" />    
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0185.jpg")} alt="image1" />    
                             </div>
                         </div>
                     </CCarouselItem>
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Wall Painting/IMG-20220919-WA0179.jpg")} alt="image1" />    
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0187.jpg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Wall Design/IMG-20220919-WA0190.jpg")} alt="image1" />    
                             </div>
                         </div>
                     </CCarouselItem>
