@@ -544,7 +544,7 @@ function Design() {
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Master Bedroom/IMG-20220919-WA0115.jpg")} alt="image1" />
+                                <img src={require("../../images/Master Bedroom/IMG-20220919-WA0123.jpg")} alt="image1" />
                             </div>
                             <div className='image-div-container'>
                                 <img src={require("../../images/Master Bedroom/IMG-20220919-WA0116.jpg")} alt="image1" />
@@ -578,7 +578,7 @@ function Design() {
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Master Bedroom/IMG-20220919-WA0115.jpg")} alt="image1" />
+                                <img src={require("../../images/Master Bedroom/IMG-20220919-WA0123.jpg")} alt="image1" />
                             </div>
                             <div className='image-div-container'>
                                 <img src={require("../../images/Master Bedroom/IMG-20220919-WA0116.jpg")} alt="image1" />
@@ -620,7 +620,7 @@ function Design() {
                     <CCarouselItem>
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
-                                <img src={require("../../images/Master Bedroom/IMG-20220919-WA0115.jpg")} alt="image1" />
+                                <img src={require("../../images/Master Bedroom/IMG-20220919-WA0123.jpg")} alt="image1" />
                             </div>
                         </div>
                     </CCarouselItem>
