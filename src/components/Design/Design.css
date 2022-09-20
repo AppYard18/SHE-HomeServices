@@ -91,6 +91,7 @@
     font-weight: 500;
     border-bottom: 3px solid transparent;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .gallery-sub-headers-button-container .sub-btn:hover {

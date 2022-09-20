@@ -21,6 +21,7 @@ function Design() {
         sub_buttons[5].classList.remove("active-now");
         sub_buttons[6].classList.remove("active-now");
         sub_buttons[8].classList.remove("active-now");
+        sub_buttons[9].classList.remove("active-now");
         
         for(let i = 0; i<buttons.length; i++) {
             buttons[i].addEventListener('click', () => {

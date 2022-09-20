@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { HashLink as Link } from 'react-router-hash-link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 
@@ -25,8 +26,8 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/#design" onClick={navbar_close}>Home</Nav.Link>
-            <Nav.Link href="/#testimonies" onClick={navbar_close}>Testimonies</Nav.Link>
+            <Link to="/#design" className='nav-link' onClick={navbar_close}>Home</Link>
+            <Link to="/#testimonies" className='nav-link' onClick={navbar_close}>Testimonies</Link>
             <Nav.Link href="/contact" onClick={navbar_close}>Contact Us</Nav.Link>
             <Nav.Link href="/gallery" onClick={navbar_close}>Gallery</Nav.Link>
             <Nav.Link href="/">Get Estimate</Nav.Link>
