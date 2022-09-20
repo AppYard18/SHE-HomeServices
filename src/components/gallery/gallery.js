@@ -19,6 +19,7 @@ function Gallery() {
     const falseCeilingandLightingArray = [];
     const foyerAreaArray = [];
     const homeDecorArray = [];
+    const tvUnitArray = [];
     const crockeryArray = [];
     const diningArray = [];
     const modularArray = [];
@@ -32,6 +33,7 @@ function Gallery() {
     const [falseCeilingandLightingDisplay, setCeilingArray] = useState([]);
     const [foyerAreaDisplay, setFoyerArray] = useState([]);
     const [homeDecorDisplay, setHomeDecorArray] = useState([]);
+    const [tvUnitDisplay, setTvUnitArray] = useState([]);
     const [crockeryDisplay, setCrockeryArray] = useState([]);
     const [diningDisplay, setDiningArray] = useState([]);
     const [modularDisplay, setModularArray] = useState([]);
@@ -86,6 +88,14 @@ function Gallery() {
             homeDecorArray.push(e.name);
         });
         setHomeDecorArray(homeDecorArray);
+    })
+
+    const getRefTvUnit = ref(storage, 'living-room/tv-unit');
+    listAll(getRefTvUnit).then((element) => {
+        element.items.forEach((e) => {
+            tvUnitArray.push(e.name);
+        });
+        setTvUnitArray(tvUnitArray);
     })
 
     const getRefCrockery = ref(storage, 'kitchen/crockery');
@@ -452,6 +462,57 @@ function Gallery() {
                         <SwiperSlide key={i} className="carousel-inner">
                             <div className='image-div-container' key={i}>
                                 <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ffoyer-area%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <div className='carousel-head'>
+                    TV Unit
+                </div>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={4}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel normal"
+                >
+                    {tvUnitDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ftv-unit%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={2}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel tablet"
+                >
+                    {tvUnitDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ftv-unit%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
+                            </div> 
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={1}
+                    navigation
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="gallery-carousel other-carousel mobile"
+                >
+                    {tvUnitDisplay.map((data, i) => (
+                        <SwiperSlide key={i} className="carousel-inner">
+                            <div className='image-div-container' key={i}>
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ftv-unit%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
                             </div> 
                         </SwiperSlide>
                     ))}

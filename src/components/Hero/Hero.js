@@ -13,7 +13,7 @@ function Hero() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_ms35tkb', 'template_pjcnach', form.current, 's3mFzbnemRtbDkiy1')
+    emailjs.sendForm('service_ms35tkb', 'template_bpf0umt', form.current, 'lNceVvdcKvmFkKefE')
       .then((result) => {
           console.log(result.text);
       }, (error) => {

@@ -14,12 +14,12 @@ function Design() {
 
         sub_buttons[0].classList.add("active-now");
         sub_buttons[3].classList.add("active-now");
-        sub_buttons[6].classList.add("active-now");
+        sub_buttons[7].classList.add("active-now");
         sub_buttons[1].classList.remove("active-now");
         sub_buttons[2].classList.remove("active-now");
         sub_buttons[4].classList.remove("active-now");
         sub_buttons[5].classList.remove("active-now");
-        sub_buttons[7].classList.remove("active-now");
+        sub_buttons[6].classList.remove("active-now");
         sub_buttons[8].classList.remove("active-now");
         
         for(let i = 0; i<buttons.length; i++) {
@@ -63,6 +63,9 @@ function Design() {
                     carousels[27].classList.remove("display");
                     carousels[28].classList.remove("display");
                     carousels[29].classList.remove("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
                 } else if (i === 1) {
                     buttons[0].classList.remove("active-now");
                     buttons[1].classList.add("active-now");
@@ -101,6 +104,9 @@ function Design() {
                     carousels[27].classList.remove("display");
                     carousels[28].classList.remove("display");
                     carousels[29].classList.remove("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
                 } else if (i === 2) {
                     buttons[0].classList.remove("active-now");
                     buttons[1].classList.remove("active-now");
@@ -127,18 +133,21 @@ function Design() {
                     carousels[15].classList.remove("display");
                     carousels[16].classList.remove("display");
                     carousels[17].classList.remove("display");
-                    carousels[18].classList.add("display");
-                    carousels[19].classList.add("display");
-                    carousels[20].classList.add("display");
-                    carousels[21].classList.remove("display");
-                    carousels[22].classList.remove("display");
-                    carousels[23].classList.remove("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.add("display");
+                    carousels[22].classList.add("display");
+                    carousels[23].classList.add("display");
                     carousels[24].classList.remove("display");
                     carousels[25].classList.remove("display");
                     carousels[26].classList.remove("display");
                     carousels[27].classList.remove("display");
                     carousels[28].classList.remove("display");
                     carousels[29].classList.remove("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
                 } else if (i === 3) {
                     buttons[0].classList.remove("active-now");
                     buttons[1].classList.remove("active-now");
@@ -174,9 +183,12 @@ function Design() {
                     carousels[24].classList.remove("display");
                     carousels[25].classList.remove("display");
                     carousels[26].classList.remove("display");
-                    carousels[27].classList.add("display");
-                    carousels[28].classList.add("display");
-                    carousels[29].classList.add("display");
+                    carousels[27].classList.remove("display");
+                    carousels[28].classList.remove("display");
+                    carousels[29].classList.remove("display");
+                    carousels[30].classList.add("display");
+                    carousels[31].classList.add("display");
+                    carousels[32].classList.add("display");
                 }
             })
         }
@@ -222,6 +234,9 @@ function Design() {
                     carousels[27].classList.remove("display");
                     carousels[28].classList.remove("display");
                     carousels[29].classList.remove("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
                 } else if (i === 1) {
                     sub_buttons[0].classList.remove("active-now");
                     sub_buttons[1].classList.add("active-now");
@@ -256,6 +271,9 @@ function Design() {
                     carousels[27].classList.remove("display");
                     carousels[28].classList.remove("display");
                     carousels[29].classList.remove("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
                 } else if (i === 2) {
                     sub_buttons[0].classList.remove("active-now");
                     sub_buttons[1].classList.remove("active-now");
@@ -290,10 +308,14 @@ function Design() {
                     carousels[27].classList.remove("display");
                     carousels[28].classList.remove("display");
                     carousels[29].classList.remove("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
                 } else if (i === 3) {
-                    sub_buttons[3].classList.remove("active-now");
+                    sub_buttons[3].classList.add("active-now");
                     sub_buttons[4].classList.remove("active-now");
                     sub_buttons[5].classList.remove("active-now");
+                    sub_buttons[6].classList.remove("active-now");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -324,10 +346,14 @@ function Design() {
                     carousels[27].classList.remove("display");
                     carousels[28].classList.remove("display");
                     carousels[29].classList.remove("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
                 } else if (i === 4) {
                     sub_buttons[3].classList.remove("active-now");
                     sub_buttons[4].classList.add("active-now");
                     sub_buttons[5].classList.remove("active-now");
+                    sub_buttons[6].classList.remove("active-now");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -358,10 +384,14 @@ function Design() {
                     carousels[27].classList.remove("display");
                     carousels[28].classList.remove("display");
                     carousels[29].classList.remove("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
                 } else if (i === 5) {
                     sub_buttons[3].classList.remove("active-now");
                     sub_buttons[4].classList.remove("active-now");
                     sub_buttons[5].classList.add("active-now");
+                    sub_buttons[6].classList.remove("active-now");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -392,10 +422,14 @@ function Design() {
                     carousels[27].classList.remove("display");
                     carousels[28].classList.remove("display");
                     carousels[29].classList.remove("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
                 } else if (i === 6) {
-                    sub_buttons[6].classList.remove("active-now");
-                    sub_buttons[7].classList.remove("active-now");
-                    sub_buttons[8].classList.remove("active-now");
+                    sub_buttons[3].classList.remove("active-now");
+                    sub_buttons[4].classList.remove("active-now");
+                    sub_buttons[5].classList.remove("active-now");
+                    sub_buttons[6].classList.add("active-now");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -426,10 +460,13 @@ function Design() {
                     carousels[27].classList.remove("display");
                     carousels[28].classList.remove("display");
                     carousels[29].classList.remove("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
                 } else if (i === 7) {
-                    sub_buttons[6].classList.remove("active-now");
                     sub_buttons[7].classList.add("active-now");
                     sub_buttons[8].classList.remove("active-now");
+                    sub_buttons[9].classList.remove("active-now");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -460,10 +497,13 @@ function Design() {
                     carousels[27].classList.remove("display");
                     carousels[28].classList.remove("display");
                     carousels[29].classList.remove("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
                 } else if (i === 8) {
-                    sub_buttons[6].classList.remove("active-now");
                     sub_buttons[7].classList.remove("active-now");
                     sub_buttons[8].classList.add("active-now");
+                    sub_buttons[9].classList.remove("active-now");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -494,6 +534,46 @@ function Design() {
                     carousels[27].classList.remove("display");
                     carousels[28].classList.remove("display");
                     carousels[29].classList.remove("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
+                } else if (i === 9) {
+                    sub_buttons[7].classList.remove("active-now");
+                    sub_buttons[8].classList.remove("active-now");
+                    sub_buttons[9].classList.add("active-now");
+                    carousels[0].classList.remove("display");
+                    carousels[1].classList.remove("display");
+                    carousels[2].classList.remove("display");
+                    carousels[3].classList.remove("display");
+                    carousels[4].classList.remove("display");
+                    carousels[5].classList.remove("display");
+                    carousels[6].classList.remove("display");
+                    carousels[7].classList.remove("display");
+                    carousels[8].classList.remove("display");
+                    carousels[9].classList.remove("display");
+                    carousels[10].classList.remove("display");
+                    carousels[11].classList.remove("display");
+                    carousels[12].classList.remove("display");
+                    carousels[13].classList.remove("display");
+                    carousels[14].classList.remove("display");
+                    carousels[15].classList.remove("display");
+                    carousels[16].classList.remove("display");
+                    carousels[17].classList.remove("display");
+                    carousels[18].classList.remove("display");
+                    carousels[19].classList.remove("display");
+                    carousels[20].classList.remove("display");
+                    carousels[21].classList.remove("display");
+                    carousels[22].classList.remove("display");
+                    carousels[23].classList.remove("display");
+                    carousels[24].classList.remove("display");
+                    carousels[25].classList.remove("display");
+                    carousels[26].classList.remove("display");
+                    carousels[27].classList.add("display");
+                    carousels[28].classList.add("display");
+                    carousels[29].classList.add("display");
+                    carousels[30].classList.remove("display");
+                    carousels[31].classList.remove("display");
+                    carousels[32].classList.remove("display");
                 }
             })
         }
@@ -530,6 +610,7 @@ function Design() {
                     <span className='sub-btn active-now' onClick={subButtonSelect}>Home Decor</span>
                     <span className='sub-btn' onClick={subButtonSelect}>False Ceiling and Lighting</span>
                     <span className='sub-btn' onClick={subButtonSelect}>Foyer Area</span>
+                    <span className='sub-btn' onClick={subButtonSelect}>TV Unit</span>
                 </div>
                 <div className='gallery-sub-headers-button-container'>
                     <span className='sub-btn active-now' onClick={subButtonSelect}>Dining</span>
@@ -1322,6 +1403,142 @@ function Design() {
                         <div className='carousel-contain'>
                             <div className='image-div-container'>
                                 <img src={require("../../images/Foyer Area/IMG-20220919-WA0155.jpg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+
+                {/* TV Unit Carousel */}
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-normal">
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.13 AM (1).jpeg")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.13 AM (2).jpeg")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.13 AM (3).jpeg")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.13 AM.jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className="carousel-contain">
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.14 AM (1).jpeg")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.14 AM (2).jpeg")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.14 AM (3).jpeg")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.14 AM (4).jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-tablet">
+                <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.13 AM (1).jpeg")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.13 AM (2).jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.13 AM (3).jpeg")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.13 AM.jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.14 AM (1).jpeg")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.14 AM (2).jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.14 AM (3).jpeg")} alt="image1" />    
+                            </div>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.14 AM (4).jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                </CCarousel>
+                <CCarousel controls transition="crossfade" dark interval={false} className="custom-carousel home-mobile">
+                <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.13 AM (1).jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.13 AM (2).jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.13 AM (3).jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.13 AM.jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.14 AM (1).jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.14 AM (2).jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.14 AM (3).jpeg")} alt="image1" />    
+                            </div>
+                        </div>
+                    </CCarouselItem>
+                    <CCarouselItem>
+                        <div className='carousel-contain'>
+                            <div className='image-div-container'>
+                                <img src={require("../../images/Tv Unit/WhatsApp Image 2022-09-20 at 9.30.14 AM (4).jpeg")} alt="image1" />    
                             </div>
                         </div>
                     </CCarouselItem>
