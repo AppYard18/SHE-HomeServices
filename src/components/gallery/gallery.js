@@ -359,7 +359,7 @@ function Gallery() {
                     {homeDecorDisplay.map((data, i) => (
                         <SwiperSlide key={i} className="carousel-inner">
                             <div className='image-div-container' key={i}>
-                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ffalse-ceiling-and-lighting%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
+                                <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Fhome-decor%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
                             </div> 
                         </SwiperSlide>
                     ))}
