@@ -9,7 +9,7 @@ function ContactUs() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_ms35tkb', 'template_k82ao6e', form.current, 'lNceVvdcKvmFkKefE')
+        emailjs.sendForm('service_a6oebmd', 'template_k82ao6e', form.current, 'lNceVvdcKvmFkKefE')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
