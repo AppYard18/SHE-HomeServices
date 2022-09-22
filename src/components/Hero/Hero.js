@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import emailjs from '@emailjs/browser';
+import { AiFillCheckCircle } from "react-icons/ai";
 
 
 function Hero() {
@@ -24,6 +25,12 @@ function Hero() {
       for (let i = 0; i<inputs.length; i++) {
           inputs[i].value = "";
       }
+
+    document.querySelector(".message-sent").style.display = "flex";
+
+    setTimeout(function(){
+      document.querySelector(".message-sent").style.display = "none";
+    }, 4000);
   };
 
   return (
@@ -52,6 +59,7 @@ function Hero() {
                 <Form.Control type="text" placeholder="Your Name" name='user_name' required />
                 <Form.Control type="email" placeholder="Your Email Id" name='user_email' required />
                 <Form.Control type="tel" placeholder="Enter Your Mobile Number" name='user_phone' pattern='[0-9]{10}' required />
+                <span className='message-sent'><AiFillCheckCircle />&nbsp;&nbsp;Message Sent</span>
                 <button type='submit' className='hero-btn'>Book a Free Design Session</button>
               </form>
             </div>

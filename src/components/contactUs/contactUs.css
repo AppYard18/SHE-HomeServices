@@ -50,6 +50,17 @@
     color: #888888;
 }
 
+span.message-sent {
+    height: 2rem;
+    padding: 0 10px;
+    border-radius: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    border: 2px solid green;
+}
+
 .contact-button {
     background-color: #F1CD76;
     box-shadow: 0px 5.04666px 27.3684px rgba(0, 0, 0, 0.25);

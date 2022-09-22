@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import './contactUs.css';
 import Form from 'react-bootstrap/Form';
 import emailjs from '@emailjs/browser';
+import { AiFillCheckCircle } from "react-icons/ai";
 
 function ContactUs() {
     const form = useRef();
@@ -20,6 +21,12 @@ function ContactUs() {
         for (let i = 0; i<inputs.length; i++) {
             inputs[i].value = "";
         }
+
+        document.querySelector(".message-sent").style.display = "flex";
+
+        setTimeout(function(){
+            document.querySelector(".message-sent").style.display = "none";
+        }, 4000);
     };
 
   return (
@@ -31,6 +38,7 @@ function ContactUs() {
                 <Form.Control type="text" placeholder="Your Name" name='user_name' required />
                 <Form.Control type="email" placeholder="Your Email Id" name='user_email' required />
                 <Form.Control type="tel" placeholder="Enter Your Mobile Number" name='user_phone' pattern='[0-9]{10}' required />
+                <span className='message-sent'><AiFillCheckCircle />&nbsp;&nbsp;Message Sent</span>
                 <button type='submit' className='contact-button'>Book a Free Design Session</button>
                 <div className='call-div'>
                     <span className='span-1'>
