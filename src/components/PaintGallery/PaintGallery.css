@@ -1,0 +1,41 @@
+.btn-group-vertical>.btn, .btn-group>.btn {
+    position: relative;
+    background: transparent;
+    color: black;
+    border: 2px solid gold;
+    border-radius: 100%;
+    margin-left: 1rem;
+    margin-top: -5px;
+}
+
+.individual-page-container {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-wrap: wrap;
+    padding: 3rem;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.individual-page-container.display {
+    display: flex;
+}
+
+.individual-page-container > .image-div-container {
+    width: 300px;
+    height: 300px;
+}
+
+.individual-page-container > .image-div-container > img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:432px) {
+    .individual-page-container {
+        padding: 0;
+        margin-top: 3rem;
+    }
+}

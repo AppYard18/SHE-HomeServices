@@ -73,8 +73,43 @@
     color: black;
 }
 
+.gallery-sub-headers-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-sub-headers-container.right {
+    justify-content: right;
+}
+
+.view-all-container {
+    display: none;
+    margin-top: 0.5rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.view-all-container > span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.view-all-container > span > a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.view-all-container.display {
+    display: flex;
+}
+
 .gallery-sub-headers-button-container {
-    width: 30%;
+    width: 50%;
     justify-content: flex-start;
     margin-left: 5rem;
     gap: 1.5rem;
@@ -214,7 +249,7 @@
     .gallery-sub-headers-button-container {
         margin-left: 3rem;
         margin-top: 2rem;
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -259,9 +294,18 @@
         margin-top: 0.5rem;
     }
 
+    .gallery-sub-headers-container {
+        flex-direction: column;
+    }
+
+    .gallery-sub-headers-container > .view-all-container {
+        margin-right: -50%;
+    }
+
     .gallery-sub-headers-button-container {
         margin-left: 1.5rem;
         width: 90%;
+        flex-wrap: wrap;
     }
 
     .custom-carousel {

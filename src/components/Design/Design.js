@@ -3,6 +3,7 @@ import './Design.css';
 import '@coreui/coreui/dist/css/coreui.min.css';
 import Button from 'react-bootstrap/Button';
 import { CCarousel, CCarouselItem } from '@coreui/react';
+import { BsArrowRight } from "react-icons/bs";
 
 function Design() {
 
@@ -11,6 +12,7 @@ function Design() {
         let sub_buttons_container = document.querySelectorAll(".gallery-sub-headers-button-container");
         let sub_buttons = document.querySelectorAll(".sub-btn");
         let carousels = document.querySelectorAll(".custom-carousel");
+        let view_all = document.querySelectorAll(".view-all-container");
 
         sub_buttons[0].classList.add("active-now");
         sub_buttons[3].classList.add("active-now");
@@ -27,6 +29,7 @@ function Design() {
             buttons[i].addEventListener('click', () => {
                 console.log(i);
                 if (i === 0) {
+                    document.querySelector(".gallery-sub-headers-container").classList.remove("right");
                     buttons[0].classList.add("active-now");
                     buttons[1].classList.remove("active-now");
                     buttons[2].classList.remove("active-now");
@@ -34,6 +37,10 @@ function Design() {
                     sub_buttons_container[0].classList.add("display");
                     sub_buttons_container[1].classList.remove("display");
                     sub_buttons_container[2].classList.remove("display");
+                    view_all[0].classList.add("display");
+                    view_all[1].classList.remove("display");
+                    view_all[2].classList.remove("display");
+                    view_all[3].classList.remove("display");
                     carousels[0].classList.add("display");
                     carousels[1].classList.add("display");
                     carousels[2].classList.add("display");
@@ -68,6 +75,7 @@ function Design() {
                     carousels[31].classList.remove("display");
                     carousels[32].classList.remove("display");
                 } else if (i === 1) {
+                    document.querySelector(".gallery-sub-headers-container").classList.remove("right");
                     buttons[0].classList.remove("active-now");
                     buttons[1].classList.add("active-now");
                     buttons[2].classList.remove("active-now");
@@ -75,6 +83,10 @@ function Design() {
                     sub_buttons_container[0].classList.remove("display");
                     sub_buttons_container[1].classList.add("display");
                     sub_buttons_container[2].classList.remove("display");
+                    view_all[0].classList.remove("display");
+                    view_all[1].classList.add("display");
+                    view_all[2].classList.remove("display");
+                    view_all[3].classList.remove("display");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -109,6 +121,7 @@ function Design() {
                     carousels[31].classList.remove("display");
                     carousels[32].classList.remove("display");
                 } else if (i === 2) {
+                    document.querySelector(".gallery-sub-headers-container").classList.remove("right");
                     buttons[0].classList.remove("active-now");
                     buttons[1].classList.remove("active-now");
                     buttons[2].classList.add("active-now");
@@ -116,6 +129,10 @@ function Design() {
                     sub_buttons_container[0].classList.remove("display");
                     sub_buttons_container[1].classList.remove("display");
                     sub_buttons_container[2].classList.add("display");
+                    view_all[0].classList.remove("display");
+                    view_all[1].classList.remove("display");
+                    view_all[2].classList.add("display");
+                    view_all[3].classList.remove("display");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -150,6 +167,7 @@ function Design() {
                     carousels[31].classList.remove("display");
                     carousels[32].classList.remove("display");
                 } else if (i === 3) {
+                    document.querySelector(".gallery-sub-headers-container").classList.add("right");
                     buttons[0].classList.remove("active-now");
                     buttons[1].classList.remove("active-now");
                     buttons[2].classList.remove("active-now");
@@ -157,6 +175,10 @@ function Design() {
                     sub_buttons_container[0].classList.remove("display");
                     sub_buttons_container[1].classList.remove("display");
                     sub_buttons_container[2].classList.remove("display");
+                    view_all[0].classList.remove("display");
+                    view_all[1].classList.remove("display");
+                    view_all[2].classList.remove("display");
+                    view_all[3].classList.add("display");
                     carousels[0].classList.remove("display");
                     carousels[1].classList.remove("display");
                     carousels[2].classList.remove("display");
@@ -602,21 +624,39 @@ function Design() {
                     <Button onClick={buttonSelect}>Kitchen</Button>
                     <Button onClick={buttonSelect}>Other</Button>
                 </div>
-                <div className='gallery-sub-headers-button-container display'>
-                    <span className='sub-btn active-now' onClick={subButtonSelect}>Master</span>
-                    <span className='sub-btn' onClick={subButtonSelect}>Guest</span>
-                    <span className='sub-btn' onClick={subButtonSelect}>Kids</span>
-                </div>
-                <div className='gallery-sub-headers-button-container'>
-                    <span className='sub-btn active-now' onClick={subButtonSelect}>Home Decor</span>
-                    <span className='sub-btn' onClick={subButtonSelect}>False Ceiling and Lighting</span>
-                    <span className='sub-btn' onClick={subButtonSelect}>Foyer Area</span>
-                    <span className='sub-btn' onClick={subButtonSelect}>TV Unit</span>
-                </div>
-                <div className='gallery-sub-headers-button-container'>
-                    <span className='sub-btn active-now' onClick={subButtonSelect}>Dining</span>
-                    <span className='sub-btn' onClick={subButtonSelect}>Modular Kitchen</span>
-                    <span className='sub-btn' onClick={subButtonSelect}>Crockery Unit</span>
+                <div className='gallery-sub-headers-container'>
+                    <div className='gallery-sub-headers-button-container display'>
+                        <span className='sub-btn active-now' onClick={subButtonSelect}>Master</span>
+                        <span className='sub-btn' onClick={subButtonSelect}>Guest</span>
+                        <span className='sub-btn' onClick={subButtonSelect}>Kids</span>
+                    </div>
+                    <div className='view-all-container display'>
+                        <span><a href="/bedroom">View All</a></span>
+                        <BsArrowRight />
+                    </div>
+                    <div className='gallery-sub-headers-button-container'>
+                        <span className='sub-btn active-now' onClick={subButtonSelect}>Home Decor</span>
+                        <span className='sub-btn' onClick={subButtonSelect}>False Ceiling and Lighting</span>
+                        <span className='sub-btn' onClick={subButtonSelect}>Foyer Area</span>
+                        <span className='sub-btn' onClick={subButtonSelect}>TV Unit</span>
+                    </div>
+                    <div className='view-all-container'>
+                        <span><a href="/living-room">View All</a></span>
+                        <BsArrowRight />
+                    </div>
+                    <div className='gallery-sub-headers-button-container'>
+                        <span className='sub-btn active-now' onClick={subButtonSelect}>Dining</span>
+                        <span className='sub-btn' onClick={subButtonSelect}>Modular Kitchen</span>
+                        <span className='sub-btn' onClick={subButtonSelect}>Crockery Unit</span>
+                    </div>
+                    <div className='view-all-container'>
+                        <span><a href="/kitchen">View All</a></span>
+                        <BsArrowRight />
+                    </div>
+                    <div className='view-all-container'>
+                        <span><a href="/others">View All</a></span>
+                        <BsArrowRight />
+                    </div>
                 </div>
 
                 {/* Bedroom Carousels */}

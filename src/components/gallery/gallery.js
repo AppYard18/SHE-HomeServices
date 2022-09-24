@@ -8,6 +8,7 @@ import SwiperCore, { Navigation, Scrollbar } from "swiper";
 import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
+import { BsArrowRight } from "react-icons/bs";
 
 SwiperCore.use([Navigation, Scrollbar]);
 
@@ -148,14 +149,20 @@ function Gallery() {
     
     return (
         <div className='gallery-main-container'>
-            <div className='-gallery-main-content-container'>
+            <div className='gallery-main-content-container'>
                 <div className='gallery-content-head'>
                     <div className='head-title'>
                         SOME OF OUR <span>LATEST DESIGNS</span>
                     </div>
                 </div>
-                <div className='carousel-head-main'>
-                    Bedroom
+                <div className='gallery-sub-headers-container'>
+                    <div className='carousel-head-main'>
+                        Bedroom
+                    </div>
+                    <div className='view-all-container display'>
+                        <span><a href="/bedroom">View All</a></span>
+                        <BsArrowRight />
+                    </div>
                 </div>
                 <div className='carousel-head'>
                     Master Bedroom
@@ -310,8 +317,14 @@ function Gallery() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                <div className='carousel-head-main'>
-                    Living Room
+                <div className='gallery-sub-headers-container'>
+                    <div className='carousel-head-main'>
+                        Living Room
+                    </div>
+                    <div className='view-all-container display'>
+                        <span><a href="/living-room">View All</a></span>
+                        <BsArrowRight />
+                    </div>
                 </div>
                 <div className='carousel-head'>
                     Home Decor
@@ -517,8 +530,14 @@ function Gallery() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                <div className='carousel-head-main'>
-                    Kitchen
+                <div className='gallery-sub-headers-container'>
+                    <div className='carousel-head-main'>
+                        Kitchen
+                    </div>
+                    <div className='view-all-container display'>
+                        <span><a href="/kitchen">View All</a></span>
+                        <BsArrowRight />
+                    </div>
                 </div>
                 <div className='carousel-head'>
                     Dining Area
@@ -673,8 +692,14 @@ function Gallery() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                <div className='carousel-head-main'>
-                    Others
+                <div className='gallery-sub-headers-container'>
+                    <div className='carousel-head-main'>
+                        Others
+                    </div>
+                    <div className='view-all-container display'>
+                        <span><a href="/others">View All</a></span>
+                        <BsArrowRight />
+                    </div>
                 </div>
                 <Swiper
                     spaceBetween={1}
@@ -724,8 +749,14 @@ function Gallery() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                <div className='carousel-head-main'>
-                    Paint
+                <div className='gallery-sub-headers-container'>
+                    <div className='carousel-head-main'>
+                        Paint
+                    </div>
+                    <div className='view-all-container display'>
+                        <span><a href="/paint">View All</a></span>
+                        <BsArrowRight />
+                    </div>
                 </div>
                 <div className='carousel-head'>
                     Wall Painting

@@ -3,6 +3,7 @@ import './paint.css';
 import '@coreui/coreui/dist/css/coreui.min.css';
 import Button from 'react-bootstrap/Button';
 import { CCarousel, CCarouselItem } from '@coreui/react';
+import { BsArrowRight } from "react-icons/bs";
 
 function Paint() {
 
@@ -51,9 +52,15 @@ function Paint() {
                         YOUR HOME YOUR STYLE                    
                     </div>
                 </div>
-                <div className='gallery-headers-button-container'>
-                    <Button className='paint-btn active-now' onClick={buttonSelect}>Wall Painting</Button>
-                    <Button className='paint-btn' onClick={buttonSelect}>Wall Design</Button>
+                <div className='gallery-sub-headers-container'>
+                    <div className='gallery-headers-button-container'>
+                        <Button className='paint-btn active-now' onClick={buttonSelect}>Wall Painting</Button>
+                        <Button className='paint-btn' onClick={buttonSelect}>Wall Design</Button>
+                    </div>
+                    <div className='view-all-container display'>
+                        <span><a href="/paint">View All</a></span>
+                        <BsArrowRight />
+                    </div>
                 </div>
 
                 {/* Wall Painting Carousel */}

@@ -4,6 +4,10 @@
     height: 100%;
 }
 
+.gallery-main-content-container > .gallery-sub-headers-container {
+    padding: 2rem 2rem 0rem 7rem;
+}
+
 .gallery-content-head {
     display: flex;
     flex-direction: column;
@@ -45,10 +49,8 @@
     font-weight: 600;
     font-size: 35.6917px;
     line-height: 23px;
-    margin-top: 2rem;
     text-align: left;
     color: #F4D68F;
-    margin-left: 7rem;
 }
 
 .gallery-carousel {
