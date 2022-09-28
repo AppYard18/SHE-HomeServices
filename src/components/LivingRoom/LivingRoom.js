@@ -4,6 +4,8 @@ import '@coreui/coreui/dist/css/coreui.min.css';
 import { app } from '../../firebase/firebaseConfig';
 import { getStorage, ref, listAll } from 'firebase/storage';
 import { CDropdown, CDropdownToggle, CDropdownMenu, CDropdownItem } from '@coreui/react';
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
 
 function LivingRoom() {
 
@@ -16,6 +18,9 @@ function LivingRoom() {
     const [foyerAreaDisplay, setFoyerArray] = useState([]);
     const [homeDecorDisplay, setHomeDecorArray] = useState([]);
     const [tvUnitDisplay, setTvUnitArray] = useState([]);
+
+    const [ImageSrc, setImageSrc] = useState("");
+    const [show, setShow] = useState(false);
 
     const storage = getStorage(app);
 
@@ -87,12 +92,61 @@ function LivingRoom() {
         }
     }
 
+    const image_click = () => {
+        let images = document.querySelectorAll(".product-image");
+        
+        for(let i = 0; i<images.length; i++) {
+            images[i].addEventListener('click', () => {
+                console.log(i);
+                setImageSrc(images[i].src);
+                document.querySelector(".image-zoom-container").style.display = "flex";
+            })
+        }
+    }
+
+    const removeZoom = () => {
+        document.querySelector(".image-zoom-container").style.display = "none";
+    }
+
+    const copyLink = () => {
+        navigator.clipboard.writeText(ImageSrc);
+        setShow(true);
+    }
+
     useEffect(() => {
         onSelect();
+        image_click();
     })
     
     return (
         <div className='gallery-main-container'>
+            <Alert show={show} variant="success">
+                <Alert.Heading>Copied!!</Alert.Heading>
+                <p>
+                    The Link to the image has been copied to your clipboard.
+                </p>
+                <hr />
+                <div className="d-flex justify-content-end">
+                    <Button onClick={() => setShow(false)} variant="outline-success">
+                        Close!
+                    </Button>
+                </div>
+            </Alert>
+            <div className='image-zoom-container' onClick={removeZoom}>
+                <div className="image-zoom-inner-container">
+                    <div className="image-zoom-container-head">
+                        BEDROOM
+                    </div>
+                    <div className="image-zoom-container-image">
+                        <img src={ImageSrc} alt="zoomed" />
+                        <div className='share-icon-container' onClick={copyLink}>
+                            <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 16 16" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className='gallery-main-content-container'>
                 <div className='gallery-content-head'>
                     <div className='head-title'>
@@ -116,22 +170,22 @@ function LivingRoom() {
                 <div className='individual-page-container display'>
                     {homeDecorDisplay.map((data, i) => (
                         <div className='image-div-container' key={i}>
-                            <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Fhome-decor%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
+                            <img className='product-image' src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Fhome-decor%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" onClick={image_click} />    
                         </div>
                     ))}
                     {falseCeilingandLightingDisplay.map((data, i) => (
                         <div className='image-div-container' key={i}>
-                            <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ffalse-ceiling-and-lighting%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
+                            <img className='product-image' src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ffalse-ceiling-and-lighting%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" onClick={image_click} />    
                         </div>
                     ))}
                     {foyerAreaDisplay.map((data, i) => (
                         <div className='image-div-container' key={i}>
-                            <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ffoyer-area%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
+                            <img className='product-image' src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ffoyer-area%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" onClick={image_click} />    
                         </div>
                     ))}
                     {tvUnitDisplay.map((data, i) => (
                         <div className='image-div-container' key={i}>
-                            <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ftv-unit%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
+                            <img className='product-image' src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ftv-unit%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" onClick={image_click} />    
                         </div>
                     ))}
                 </div>
@@ -140,7 +194,7 @@ function LivingRoom() {
                 <div className='individual-page-container display'>
                     {homeDecorDisplay.map((data, i) => (
                         <div className='image-div-container' key={i}>
-                            <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Fhome-decor%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
+                            <img className='product-image' src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Fhome-decor%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" onClick={image_click} />    
                         </div>
                     ))}
                 </div>
@@ -149,7 +203,7 @@ function LivingRoom() {
                 <div className='individual-page-container display'>
                     {falseCeilingandLightingDisplay.map((data, i) => (
                         <div className='image-div-container' key={i}>
-                            <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ffalse-ceiling-and-lighting%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
+                            <img className='product-image' src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ffalse-ceiling-and-lighting%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" onClick={image_click} />    
                         </div>
                     ))}
                 </div>
@@ -158,7 +212,7 @@ function LivingRoom() {
                 <div className='individual-page-container display'>
                     {foyerAreaDisplay.map((data, i) => (
                         <div className='image-div-container' key={i}>
-                            <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ffoyer-area%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
+                            <img className='product-image' src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ffoyer-area%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" onClick={image_click} />    
                         </div>
                     ))}
                 </div>
@@ -167,7 +221,7 @@ function LivingRoom() {
                 <div className='individual-page-container display'>
                     {tvUnitDisplay.map((data, i) => (
                         <div className='image-div-container' key={i}>
-                            <img src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ftv-unit%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" />    
+                            <img className='product-image' src={"https://firebasestorage.googleapis.com/v0/b/she-interiors.appspot.com/o/living-room%2Ftv-unit%2F" + data + "?alt=media&token=20dc1d0b-f98d-4f11-8e89-9bc12c1bafbe"} key={i} alt="image1" onClick={image_click} />    
                         </div>
                     ))}
                 </div>
