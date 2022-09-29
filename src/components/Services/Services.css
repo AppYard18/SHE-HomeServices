@@ -47,12 +47,13 @@
     background: rgba(227, 227, 227, 0.65);
     border-radius: 35px;
     width: 60%;
-    padding: 1% 5%;
+    padding: 0 5% 1% 5%;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    height: 45%;
+    height: 60%;
     margin-bottom: -2%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .services-icon-container {
@@ -73,15 +74,41 @@
 }
 
 @media (max-width:920px) {
-    .commercial-container {
-        
+    .services-container {
+        background-size: 100% 100%;
     }
 
-    .commercial-inner-container .row {
-        flex-direction: column;
+    .services-icons-container {
+        width: 60%;
+        padding: 0 5% 5% 5%;
     }
 }
 
 @media (max-width:432px) {
-    
+    .services-container-head {
+        font-size: 40px;
+    }
+
+    .services-inner-container {
+        gap: 1rem;
+    }
+
+    .services-icons-container {
+        width: 90%;
+        padding: 0 2% 5% 2%;
+        height: 65%;
+        margin-bottom: -10%;
+    }
+
+    .services-icon-container {
+        height: 50px;
+    }
+
+    .services-icon-name {
+        font-size: 12px;
+    }
+
+    .services-container-sub-head {
+        font-size: 18px;
+    }
 }

@@ -38,10 +38,15 @@
     --bs-gutter-x: 0;
 }
 
+.row .col-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .commercial-container-image {
     height: 100%;
     width: 50%;
-    margin-left: 25%;
 }
 
 .commercial-container-image > img {
@@ -129,12 +134,19 @@
         background-size: 100% 100%;
     }
 
+    .commercial-inner-container {
+        justify-content: flex-end;
+    }
+
     .commercial-inner-container .row {
         flex-direction: column;
         gap: 1.5rem;
+        margin-bottom: 5%;
     }
 }
 
 @media (max-width:432px) {
-    
+    .commercial-content-head {
+        
+    }
 }
