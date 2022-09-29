@@ -146,7 +146,50 @@
 }
 
 @media (max-width:432px) {
+    .commercial-container {
+        height: 100%;
+    }
+
+    .commercial-inner-container {
+        height: 100%;
+    }
+
+    .commercial-container-head {
+        font-size: 32px;
+        margin-top: 30%;
+    }
+
+    .commercial-container-content {
+        width: 90%;
+    }
+
     .commercial-content-head {
-        
+        font-size: 24px;
+    }
+    
+    .commercial-content-text {
+        font-size: 14px;
+    }
+    
+    .commercial-content-list {
+        width: 100%;
+    }
+    
+    .commercial-content-list > ul {
+        font-size: 18px;
+        margin-left: 0;
+    }
+    
+    .commercial-content-list > ul > li > span {
+        font-size: 14px;
+        margin-left: 0;
+    }
+    
+    .commercial-content-button {
+        width: 50%;
+    }
+    
+    .commercial-content-button > a {
+        font-size: 16px;
     }
 }
