@@ -85,8 +85,17 @@
 }
 
 @media (max-width:432px) {
+    .services-container {
+        height: 110vh;
+    }
+
+    .services-inner-container {
+        height: 100%;
+    }
+
     .services-container-head {
         font-size: 40px;
+        margin-top: 15%;
     }
 
     .services-inner-container {
@@ -101,7 +110,7 @@
     }
 
     .services-icon-container {
-        height: 50px;
+        height: 60px;
     }
 
     .services-icon-name {
