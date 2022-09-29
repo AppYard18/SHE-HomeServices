@@ -55,3 +55,34 @@
     margin-right: 0.5rem;
     font-size: 22px;
 }
+
+@media (max-width:920px) {
+    .about-container {
+        background-size: 100% 100%;
+    }
+
+    .about-content {
+        width: 80%;
+    }
+}
+
+@media (max-width:432px) {
+    .about-inner-container {
+        gap: 2rem;
+    }
+
+    .about-content {
+        width: 90%;
+        font-size: 12px;
+        margin-bottom: -5%;
+        padding: 25px;
+    }
+
+    .about-container-head {
+        font-size: 34px;
+    }
+    
+    .about-content-main > span {
+        font-size: 18px;
+    }
+}

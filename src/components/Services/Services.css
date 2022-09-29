@@ -71,3 +71,17 @@
     padding: 2px 10px;
     margin-top: 0.7rem;
 }
+
+@media (max-width:920px) {
+    .commercial-container {
+        
+    }
+
+    .commercial-inner-container .row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:432px) {
+    
+}
