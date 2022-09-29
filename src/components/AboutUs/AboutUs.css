@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .about-container-head {
@@ -31,19 +31,27 @@
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
-    border-bottom: 4px solid #EECC7C;
+    border-bottom: 5px solid #EECC7C;
 }
 
 .about-content {
     background-color: white;
     width: 60%;
-    padding: 20px;
+    padding: 40px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Inter';
+    font-weight: 600;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #000000;
+    border-radius: 20px;
 }
 
-.about-content-main {
-    
-}
-
-.about-content-sub {
-
+.about-content-main > span {
+    color: #EECC7C;
+    margin-right: 0.5rem;
+    font-size: 22px;
 }
