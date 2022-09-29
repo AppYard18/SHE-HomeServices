@@ -105,6 +105,19 @@
     background-color: #E2BA5D;
 }
 
+.whatsapp-icon-container {
+    position: fixed;bottom: 2rem;
+    right: 2rem;
+    height: 4rem;
+    width: 4rem;
+    z-index: 2;
+}
+
+.whatsapp-icon-container > a > img {
+    height: 100%;
+    width: 100%;
+}
+
 @media (max-width:920px) {
     .row {
         flex-direction: column-reverse;
