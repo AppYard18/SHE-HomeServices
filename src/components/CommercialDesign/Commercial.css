@@ -38,7 +38,7 @@
     --bs-gutter-x: 0;
 }
 
-.row .col-sm {
+.commercial-inner-container .row .col-sm {
     display: flex;
     justify-content: center;
     align-items: center;
