@@ -1,12 +1,15 @@
 import React from 'react';
 import './Services.css';
-import Container from 'react-bootstrap/Container';
 
 function Services() {
   return (
-    <Container id="home" className='hero-container'>
-      
-    </Container>
+    <div className='services-container'>
+      <div className='services-inner-container'>
+        <div className='services-container-head'>
+            SERVICES
+        </div> 
+      </div>
+    </div>
   )
 }
 

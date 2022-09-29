@@ -28,11 +28,11 @@ function Home() {
     <div className='home_container'>
         <div className="content-hover-background"></div>
         <Hero />
-        <AboutUs />
         <Services />
-        <Commercial />
         <Design />
         <Paint />
+        <Commercial />
+        <AboutUs />
         <Testimonies />
     </div>
   )

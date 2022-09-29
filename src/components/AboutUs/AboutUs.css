@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.about-container {
+    background: url("../../images/aboutus_page_banner.png");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+}
+
+.about-inner-container {
+    background: rgba(0, 0, 0, 0.49);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-container-head {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: 4px solid #EECC7C;
+}
+
+.about-content {
+    background-color: white;
+    width: 60%;
+    padding: 20px;
+}
+
+.about-content-main {
+    
+}
+
+.about-content-sub {
+
+}
