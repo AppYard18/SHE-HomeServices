@@ -106,8 +106,9 @@
 }
 
 .whatsapp-icon-container {
-    position: fixed;bottom: 2rem;
-    right: 2rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
     height: 4rem;
     width: 4rem;
     z-index: 2;
