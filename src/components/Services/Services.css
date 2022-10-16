@@ -121,3 +121,46 @@
         font-size: 18px;
     }
 }
+
+@media (max-width:342px) {
+    .services-container {
+        height: 120vh;
+        background-size: cover;
+    }
+
+    .services-inner-container {
+        height: 100%;
+        gap: 1rem;
+        background-size: cover;
+    }
+
+    .services-container-head {
+        font-size: 36px;
+        margin-top: 35%;
+    }
+
+    .services-icons-container {
+        width: 95%;
+        padding: 0 2% 5% 2%;
+        height: 50%;
+    }
+
+    .services-icon-container {
+        height: auto;
+        width: 45%;
+        margin-top: 0.5rem;
+    }
+
+    .services-icon-container > img {
+        height: auto;
+        width: 30%;
+    }
+
+    .services-icon-name {
+        font-size: 12px;
+    }
+
+    .services-container-sub-head {
+        font-size: 18px;
+    }
+}

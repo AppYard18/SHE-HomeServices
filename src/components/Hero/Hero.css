@@ -229,3 +229,49 @@
         font-size: 18px;
     }
 }
+
+@media (max-width:342px) {
+    .hero-box-text {
+        display: none;    
+    }
+
+    .hero-form {
+        padding-top: 40%;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .hero-btn {
+        width: 100%;
+        font-size: 13px;
+        margin-top: 0;
+    }
+
+    .hero-box-text-1 {
+        font-size: 22px;
+    }
+
+    .hero-box-title {
+        padding-top: 10%;
+    }
+    
+    .hero-box-title > svg {
+        height: 50px;
+    }
+
+    .form-head-title {
+        font-size: 30.7259px;
+    }
+
+    .main-form {
+        width: 80%;
+        margin-top: 0;
+    }
+
+    .main-form > input {
+        font-size: 14px;
+    }
+}

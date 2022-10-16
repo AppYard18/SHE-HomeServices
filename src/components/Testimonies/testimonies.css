@@ -90,7 +90,7 @@
 
 @media (max-width:432px) {
     /* .testimonies-container {
-        margin-top: 30%;
+        height: 100%;
     } */
 
     .testimonies-head-container {
@@ -98,14 +98,14 @@
     }
 
     .testimonies-head-title {
-        font-size: 48px;
+        font-size: 40px;
         color: black;
-        line-height: 60px;
+        line-height: 40px;
     }
 
     .testimonies-carousel {
-        height: 320px;
-        width: 320px;
+        height: 280px;
+        width: 280px;
         margin-bottom: 10%;
     }
 }
